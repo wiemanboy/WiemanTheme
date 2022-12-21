@@ -3,7 +3,7 @@
  * @author wiemanboy
  * @version 0.0.1
  * @description My own discord theme :)
- * @source
+ * @source https://github.com/wiemanboy/MyDiscordThemes/blob/master/wiemantheme.theme.css
  */
 
 .theme-dark, .theme-light {
@@ -20,7 +20,6 @@
     --gray3: #d0d0d0;
     --gray4: #707070;
 
-    /* #da980a */
     --yellow: #ff7722;
     --red: #f00000;
     --WIP: red;
