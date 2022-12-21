@@ -1,0 +1,148 @@
+/**
+ * @name WiemanTheme
+ * @author wiemanboy
+ * @version 0.0.1
+ * @description My own discord theme :)
+ * @source
+ */
+
+.theme-dark, .theme-light {
+    /* colors */
+    --black1: #000000;
+    --black2: #0f0f0f;
+    --black3: #161616;
+    --black4: #0c0c0c;
+    --black5: #131313;
+    --black6: #090909;
+
+    --gray1: #808080;
+    --gray2: #505050;
+    --gray3: #d0d0d0;
+    --gray4: #707070;
+
+    /* #da980a */
+    --yellow: #ff7722;
+    --red: #f00000;
+    --WIP: red;
+
+    --rgba-light-purple: 128, 0, 128;
+    --rgba-dark-purple: 192 0 192;
+
+    --light-purple: #c000c0;
+    --dark-purple: #800080;
+    --light-purple-gradient: linear-gradient(90deg, var(--dark-purple) 0%, var(--light-purple) 80%);
+    --dark-purple-gradient: linear-gradient(90deg, var(--dark-purple) 0%, var(--light-purple) 20%, var(--light-purple) 80%, var(--dark-purple) 100%);
+
+    /* servers background*/
+    --background-tertiary: var(--black1);
+
+    /* message background */
+    --background-primary: var(--black3);
+    --background-message-hover: var(--black5);
+
+    /* dms background */
+    --background-secondary: var(--black2);
+
+    /* dms text color*/
+    --channels-default: var(--gray1);
+    --interactive-muted: var(--gray2);
+    --text-normal: var(--gray3);
+    --text-muted: var(--gray4);
+
+    /* mention dms */
+    --mention-foreground: var(--gray3);
+    --mention-background: rgba(128, 0, 128, 0.7);
+    --info-warning-foreground: var(--light-purple);
+    --background-mentioned: rgba(var(--rgba-light-purple), 0.4);
+    --background-mentioned-hover: rgba(var(--rgba-light-purple), 0.5);
+
+    /* icons */
+    --interactive-normal: var(--gray1);
+    --interactive-hover: var(--gray3);
+    --interactive-active: var(--gray3);
+
+    /* profile background */
+    --background-secondary-alt: var(--black1);
+
+    /* select */
+    --background-modifier-selected: var(--black5);
+    --background-modifier-hover: var(--black4);
+
+    /* input */
+    --channeltextarea-background: var(--black4);
+    --input-background: var(--black4);
+
+    /* scrollbar */
+    --scrollbar-auto-track: var(--black2);
+    --scrollbar-auto-thumb: var(--black1);
+
+    /* link */
+    --text-link: var(--light-purple);
+
+    /* buttons */
+    --brand-experiment-560: var(--light-purple);
+    --brand-experiment: var(--dark-purple);
+    --brand-experiment-600: var(--dark-purple-gradient);
+
+    /* gif select */
+    --primary-dark-500: var(--black5);
+
+    /* chat */
+    --background-floating: var(--black6);
+
+    /* link popup */
+    --modal-background: var(--black5);
+    --modal-footer-background: var(--black6);
+    --button-secondary-background: var(--gray2);
+
+    /* audio player */
+    --primary-dark-600: var(--black3);
+
+    /* radio button */
+    --brand-experiment-500: var(--light-purple);
+
+    /* disconnected */
+    --status-yellow-500: var(--yellow);
+}
+
+/* title */
+.typeWindows-2-g3UY::after {
+    font-weight: bold;
+    font-family: "noto sans";
+    content: "WiemanTheme";
+    color: var(--light-purple);
+    position: absolute;
+    left: 10px;
+    filter: brightness(10);
+}
+
+.wordmarkWindows-2dq6rw {
+    display: none;
+}
+
+/* button while clicking */
+.interactive-1vLZ_I:active {
+    background: var(--black3);
+}
+
+/* emoji button */
+.emojiButtonNormal-35P0_i {
+    filter: brightness(65%);
+}
+
+/* spotify invite */
+:root .invite-3uuHYQ {
+    background: var(--black4);
+    border-color: var(--black4);
+}
+
+/* BD buttons */
+.bd-notice, .bd-button {
+    background: var(--dark-purple-gradient)
+}
+.bd-button:hover {
+    background: var(--dark-purple-gradient);
+}
+.bd-button.bd-button-danger {
+    background: var(--red);
+}
