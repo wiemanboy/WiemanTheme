@@ -1,7 +1,7 @@
 /**
  * @name WiemanTheme
  * @author wiemanboy
- * @version 0.0.1
+ * @version 0.0.2
  * @description My own discord theme :)
  * @source https://github.com/wiemanboy/MyDiscordThemes/blob/master/wiemantheme.theme.css
  */
@@ -100,6 +100,9 @@
     /* audio player */
     --primary-dark-600: var(--black3);
 
+    /* @-menu */
+    --primary-dark-630: var(--black2);
+
     /* radio button */
     --brand-experiment-500: var(--light-purple);
 
@@ -161,4 +164,128 @@
 .bd-button:active {
     background-color: var(--light-purple);
     filter: brightness(1.5);
+}
+
+/* member menu */
+.membersWrap-3NUR2t {
+    width: 70px;
+    min-width: 70px;
+}
+
+.members-3WRCEx {
+    width: 70px;
+    min-height: 100vh;
+    transition: ease-in 0.3s;
+}
+
+/* extend member menu */
+.members-3WRCEx:hover {
+    width: 240px;
+    transform: translateX(-140px);
+}
+
+/* extend member menu server */
+.container-2o3qEW .members-3WRCEx:hover {
+    transform: translateX(-70px);
+}
+
+/* animations */
+@keyframes drop-down {
+    0% {
+        transform: rotateX(-90deg)
+    }
+    70% {
+        transform: rotateX(20deg)
+    }
+    100% {
+        transform: rotateX(0deg)
+    }
+}
+
+@keyframes drop-down-delay {
+    0% {
+        transform: rotateX(-90deg)
+    }
+    50% {
+        transform: rotateX(-90deg)
+    }
+    85% {
+        transform: rotateX(20deg)
+    }
+    100% {
+        transform: rotateX(0deg)
+    }
+}
+
+@keyframes drop-right {
+    0% {
+        transform: rotateY(-90deg)
+    }
+    70% {
+        transform: rotateY(20deg)
+    }
+    100% {
+        transform: rotateY(0deg)
+    }
+}
+
+@keyframes drop-right-delay {
+    0% {
+        transform: rotateY(-90deg)
+    }
+    50% {
+        transform: rotateY(-90deg)
+    }
+    85% {
+        transform: rotateY(20deg)
+    }
+    100% {
+        transform: rotateY(0deg)
+    }
+}
+
+/* hide activity/username/bottag */
+.activity-2EQDZv, .username-u-ebrn, .botTag-2mryIa, .ownerIcon-255uKo {
+    display: none;
+}
+
+/* hide and style role text */
+.membersGroup-2eiWxl {
+    padding-top: 0;
+    padding-left: 8px;
+    margin-left: 8px;
+    margin-top: 16px;
+    height: 16px;
+    color: var(--black2);
+    border-top: var(--gray2);
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+/* show roles + animate */
+.container-2o3qEW:hover .membersGroup-2eiWxl, .membersWrap-3NUR2t:hover .membersGroup-2eiWxl {
+    color: var(--gray3);
+    transform-origin: top;
+    animation: drop-down 0.3s ease-in-out forwards;
+}
+
+/* animate username */
+.container-2o3qEW:hover .username-u-ebrn, .membersWrap-3NUR2t:hover .username-u-ebrn {
+    display: flex;
+    transform-origin: left;
+    animation: drop-right 0.3s ease-in-out forwards;
+}
+
+/* animate activity */
+.container-2o3qEW:hover .activity-2EQDZv, .membersWrap-3NUR2t:hover .activity-2EQDZv {
+    display: flex;
+    transform-origin: top;
+    animation: drop-down-delay 0.5s ease-in-out forwards;
+}
+
+/* animate bottag */
+.container-2o3qEW:hover .botTag-2mryIa, .membersWrap-3NUR2t:hover .botTag-2mryIa {
+    display: flex;
+    transform-origin: left;
+    animation: drop-right-delay 0.5s ease-in-out forwards;
 }
