@@ -220,7 +220,7 @@
 }
 
 /* hide activity/username/bottag */
-.activity-2EQDZv, .username-u-ebrn, .botTag-2mryIa, .ownerIcon-255uKo {
+.activity-2EQDZv, .username-u-ebrn, .botTag-2mryIa {
     display: none;
 }
 
@@ -302,4 +302,10 @@
     transform-origin: top;
     transform: rotateX(-90deg);
     animation: drop-down 0.15s ease-in-out 0.1s forwards;
+}
+
+.ownerIcon-255uKo {
+    position: absolute;
+    transform: translateX(-22px) rotate(13deg) translateY(18px);
+    filter: drop-shadow(-1px 0 1px black);
 }
