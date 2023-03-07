@@ -111,6 +111,11 @@
     --status-yellow-500: var(--yellow);
 }
 
+/* @-menu */
+.theme-dark .autocomplete-3NRXG8{
+    background-color: var(--black2);
+}
+
 /* title */
 .typeWindows-2-g3UY::after {
     font-weight: bold;
