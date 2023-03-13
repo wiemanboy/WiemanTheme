@@ -188,7 +188,7 @@
 
 .members-3WRCEx {
     width: 70px;
-    min-height: 100vh;
+    height: calc(100vh - 48px - 22px);
     transition: ease-in 0.1s;
 }
 
