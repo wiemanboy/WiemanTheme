@@ -1,7 +1,7 @@
 /**
  * @name WiemanTheme
  * @author wiemanboy
- * @version 0.0.3
+ * @version 0.0.4-E
  * @description My own discord theme :)
  * @source https://github.com/wiemanboy/MyDiscordThemes/blob/master/wiemantheme.theme.css
  */
@@ -317,4 +317,26 @@
 .recentMentionsPopout-2bI1ZN, .messagesPopoutWrap-3zryHW, .popout-3gby1q, .browser-mnQ1T7, .menu-1QACrS {
     transform-origin: top;
     animation: drop-down 0.1s ease-in-out forwards;
+}
+
+/* 📋 channel menu */
+.sidebar-1tnWFu {
+    width: 240px;
+}
+
+.sidebar-1tnWFu:hover {
+    width: 240px;
+}
+
+/* 🧑 profile panel */
+.panels-3wFtMD {
+    transform: translateX(-75px);
+    width: 240px;
+    position: fixed;
+    bottom: 0;
+}
+
+/* 📃 server list */
+.guilds-2JjMmN {
+    height: calc(100vh - 22px - 52px);
 }
