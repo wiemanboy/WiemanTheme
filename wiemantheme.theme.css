@@ -110,6 +110,9 @@
 
     /* disconnected */
     --status-yellow-500: var(--warning);
+
+    /* channel # background */
+    --background-accent: var(--primary1)
 }
 
 /* 📋 @-menu */
