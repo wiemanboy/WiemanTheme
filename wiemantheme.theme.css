@@ -201,16 +201,21 @@
 /* extend member menu */
 .members-3WRCEx:hover {
     width: 240px;
-    transform: translateX(-140px);
 }
 
 /* extend member menu server */
 .container-2o3qEW .members-3WRCEx:hover {
-    transform: translateX(-70px);
+    transform: translateX(-80px);
 }
 
+/* extend member menu in DM group */
 .membersWrap-3NUR2t .members-3WRCEx:hover {
-    transform: translateX(-70px);
+    transform: translateX(-165px);
+}
+
+/* extend member menu in server */
+aside.membersWrap-3NUR2t .members-3WRCEx:hover {
+    transform: translateX(-80px);
 }
 
 /* animations for members menu*/
