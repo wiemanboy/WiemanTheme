@@ -1,7 +1,7 @@
 /**
  * @name WiemanTheme
  * @author wiemanboy
- * @version 0.0.4
+ * @version 1.0.0
  * @description My very own discord theme! :)
  * @source https://github.com/wiemanboy/MyDiscordThemes
  */
@@ -203,18 +203,13 @@
     width: 240px;
 }
 
-/* extend member menu server */
-.container-2o3qEW .members-3WRCEx:hover {
-    transform: translateX(-80px);
-}
-
 /* extend member menu in DM group */
 .membersWrap-3NUR2t .members-3WRCEx:hover {
     transform: translateX(-165px);
 }
 
 /* extend member menu in server */
-aside.membersWrap-3NUR2t .members-3WRCEx:hover {
+.membersWrap-3NUR2t.hiddenMembers-8kpYM0 .members-3WRCEx:hover {
     transform: translateX(-80px);
 }
 
