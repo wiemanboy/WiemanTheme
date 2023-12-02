@@ -330,22 +330,27 @@
 }
 
 /* profile panel */
-.panels-3wFtMD {
+.container_ca50b9 {
     transform: translateX(-72px);
-    width: 312px;
+    width: 296px;
     position: fixed;
     bottom: 0;
 }
 
-.flex-2S1XBF {
+.flex_f5fbb7 {
     margin-right: 10px;
 }
 
-.avatarWrapper-1B9FTW {
+.avatarWrapper_ba5175{
     flex-grow: 1;
 }
 
 /* server list + friend list fix height */
+.accountProfilePopoutWrapper_af829a {
+    transform: translateX(30px);
+}
+
+/* 📃 server list + friend list fix height */
 .guilds-2JjMmN, .sidebar-1tnWFu{
     height: calc(100vh - 52px - 22px);
 }
