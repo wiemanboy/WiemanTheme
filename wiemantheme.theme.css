@@ -125,8 +125,8 @@
     background-color: var(--primary2);
 }
 
-/* title TODO: find correct classname*/
-.typeWindows-2-g3UY::after {
+/* title */
+.typeWindows__5fa63::after {
     font-weight: bold;
     font-family: inherit;
     color: var(--custom-color1);
@@ -135,8 +135,8 @@
     content: "WiemanTheme";
 }
 
-/* top icon TODO: find correct classname*/
-.typeWindows-2-g3UY::before {
+/* top icon */
+.typeWindows__5fa63::before {
     transform: scale(0.2);
     position: absolute;
     top: -40px;
@@ -144,8 +144,8 @@
     content: var(--icon);
 }
 
-/* remove discord logo TODO: find correct classname*/
-.wordmarkWindows-2dq6rw {
+/* remove discord logo */
+.wordmarkWindows__05c46 {
     display: none;
 }
 
