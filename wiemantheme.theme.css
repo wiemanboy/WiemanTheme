@@ -349,5 +349,7 @@
 }
 
 .accountProfilePopoutWrapper_af829a {
-    transform: translateX(30px);
+    position: fixed;
+    bottom: 60px;
+    left: 10px;
 }
