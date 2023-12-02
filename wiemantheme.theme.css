@@ -301,18 +301,18 @@
 }
 
 /* animate popout */
-.userPopoutOuter-3AVBmJ {
+.userPopoutOuter_d739b2 {
     animation: slide-out 0.1s ease-in-out forwards;
 }
 
 /* animate popout info */
-.userPopoutOverlayBackground-dKOOda {
+.userPopoutOverlayBackground_d8afa4 {
     height: 0;
     animation: slide-down 0.15s ease-in-out 0.1s forwards;
 }
 
 /* animate popout badges */
-.profileBadges-31rDHI {
+.profileBadges__7a7cb {
     transform-origin: top;
     transform: rotateX(-90deg);
     animation: drop-down 0.15s ease-in-out 0.1s forwards;
