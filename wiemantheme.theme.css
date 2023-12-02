@@ -115,6 +115,7 @@
     --background-accent: var(--primary1)
 }
 
+/* UNKNOWN */
 .message-G6O-Wv {
     --primary-600: var(--primary3);
 }
@@ -124,7 +125,7 @@
     background-color: var(--primary2);
 }
 
-/* title */
+/* title TODO: find correct classname*/
 .typeWindows-2-g3UY::after {
     font-weight: bold;
     font-family: inherit;
@@ -134,7 +135,7 @@
     content: "WiemanTheme";
 }
 
-/* top icon */
+/* top icon TODO: find correct classname*/
 .typeWindows-2-g3UY::before {
     transform: scale(0.2);
     position: absolute;
@@ -143,7 +144,7 @@
     content: var(--icon);
 }
 
-/* remove discord logo */
+/* remove discord logo TODO: find correct classname*/
 .wordmarkWindows-2dq6rw {
     display: none;
 }
@@ -325,6 +326,7 @@
     filter: drop-shadow(-1px -1px 0 var(--primary3));
 }
 
+/* UNKNOWN */
 .recentMentionsPopout-2bI1ZN, .messagesPopoutWrap-3zryHW, .popout-3gby1q, .browser-mnQ1T7, .menu-1QACrS {
     transform-origin: top;
     animation: drop-down 0.1s ease-in-out forwards;
@@ -346,12 +348,6 @@
     flex-grow: 1;
 }
 
-/* server list + friend list fix height */
 .accountProfilePopoutWrapper_af829a {
     transform: translateX(30px);
-}
-
-/* 📃 server list + friend list fix height */
-.guilds-2JjMmN, .sidebar-1tnWFu{
-    height: calc(100vh - 52px - 22px);
 }
