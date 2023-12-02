@@ -319,7 +319,7 @@
 }
 
 /* move owner icon */
-.ownerIcon-255uKo {
+.ownerIcon__827bd {
     position: absolute;
     transform: translateX(-22px) rotate(13deg) translateY(18px);
     filter: drop-shadow(-1px -1px 0 var(--primary3));
