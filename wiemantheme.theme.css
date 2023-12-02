@@ -317,8 +317,10 @@
 /* move owner icon */
 .ownerIcon__827bd {
     position: absolute;
-    transform: translateX(-22px) rotate(13deg) translateY(18px);
-    filter: drop-shadow(-1px -1px 0 var(--primary3));
+    transform: translateX(-21px) translateY(7px) rotate(5deg) scale(0.9);
+    background-color: var(--background-secondary);
+    border-radius: 100%;
+    padding: 2px;
 }
 
 /* UNKNOWN */
