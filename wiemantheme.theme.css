@@ -334,7 +334,7 @@
     transform: translateX(-72px);
     width: 296px;
     position: fixed;
-    bottom: 0;
+    bottom: -1px;
 }
 
 .flex_f5fbb7 {
