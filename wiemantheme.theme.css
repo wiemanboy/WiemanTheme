@@ -350,3 +350,8 @@
     bottom: 60px;
     left: 10px;
 }
+
+/* mic test bar */
+#pill-frame-pattern {
+    color: var(--background-secondary);
+}
