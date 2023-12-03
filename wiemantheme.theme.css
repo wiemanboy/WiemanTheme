@@ -355,3 +355,54 @@
 #pill-frame-pattern {
     color: var(--background-secondary);
 }
+
+/* Remove shop icons */
+.content__23cab li:nth-child(3) .linkButton_ebd2ba,
+.content__23cab li:nth-child(4) .linkButton_ebd2ba{
+    display: none;
+}
+
+/* move friends button */
+.content__23cab li:nth-child(2) .linkButton_ebd2ba{
+    position: fixed;
+    top: 25px;
+    left: 67px;
+    width: 50px;
+}
+
+.content__23cab li:nth-child(2) .content_f767b8 {
+    display: none;
+}
+
+.content__23cab li:nth-child(2) .linkButton_ebd2ba {
+    background: none;
+}
+
+/* remove dms text */
+.privateChannelsHeaderContainer_ddcec6 {
+    padding: 0;
+    height: 0;
+}
+
+.privateChannelsHeaderContainer_ddcec6 .headerText__051c0 {
+    display: none;
+}
+
+/* move + button */
+.privateChannelsHeaderContainer_ddcec6 .privateChannelRecipientsInviteButtonIcon__1e8fc {
+    position: fixed;
+    top: 32px;
+    left: 285px;
+    padding: 5px;
+}
+
+/* move search bar to make space for above buttons*/
+
+.searchBar_e4ea2a {
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.searchBar_e4ea2a .searchBarComponent__22760 {
+    font-size: 13.7px;
+}
