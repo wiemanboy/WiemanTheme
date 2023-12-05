@@ -1,7 +1,7 @@
 /**
  * @name WiemanTheme
  * @author wiemanboy
- * @version 1.1.0
+ * @version 1.1.1
  * @description My very own discord theme! :)
  * @source https://github.com/wiemanboy/WiemanTheme
  */
@@ -187,7 +187,6 @@
     filter: brightness(1.5);
 }
 
-/* TODO: fix this in server */
 /* member menu */
 .membersWrap__90226, .container_b2ce9c {
     width: 70px;
@@ -218,19 +217,19 @@
 /* animations for members menu*/
 @keyframes drop-down {
     0% {
-        transform: rotateX(-90deg)
+        transform: translateY(-1px);
     }
     100% {
-        transform: rotateX(0deg)
+        transform: translateY(1px)
     }
 }
 
 @keyframes drop-right {
     0% {
-        transform: rotateY(-90deg)
+        transform: translateX(-2px)
     }
     100% {
-        transform: rotateY(0deg)
+        transform: translateX(2px)
     }
 }
 
@@ -255,15 +254,11 @@
 /* show roles + animate */
 .container_b2ce9c:hover .membersGroup__85843, .membersWrap__90226:hover .membersGroup__85843 {
     color: var(--secondary3);
-    transform-origin: top;
-    animation: drop-down 0.3s ease-in-out forwards;
 }
 
 /* animate username */
 .container_b2ce9c:hover .username_d272d6, .membersWrap__90226:hover .username_d272d6 {
     display: flex;
-    transform-origin: left;
-    animation: drop-right 0.3s ease-in-out forwards;
 }
 
 /* animate activity */
@@ -271,7 +266,7 @@
     display: flex;
     transform-origin: top;
     transform: rotateX(-90deg);
-    animation: drop-down 0.2s ease-in-out 0.2s forwards;
+    animation: drop-down 0.1s ease-in-out 0.1s forwards;
 }
 
 /* animate bottag */
@@ -279,7 +274,7 @@
     display: flex;
     transform-origin: left;
     transform: rotateX(-90deg);
-    animation: drop-right 0.2s ease-in-out 0.4s forwards;
+    animation: drop-right 0.1s ease-in-out 0.2s forwards;
 }
 
 /* animate profile popup */
@@ -322,8 +317,10 @@
 /* move owner icon */
 .ownerIcon__827bd {
     position: absolute;
-    transform: translateX(-22px) rotate(13deg) translateY(18px);
-    filter: drop-shadow(-1px -1px 0 var(--primary3));
+    transform: translateX(-21px) translateY(7px) rotate(5deg) scale(0.9);
+    background-color: var(--background-secondary);
+    border-radius: 100%;
+    padding: 2px;
 }
 
 /* UNKNOWN */
@@ -337,7 +334,7 @@
     transform: translateX(-72px);
     width: 296px;
     position: fixed;
-    bottom: 0;
+    bottom: -1px;
 }
 
 .flex_f5fbb7 {
@@ -349,5 +346,63 @@
 }
 
 .accountProfilePopoutWrapper_af829a {
-    transform: translateX(30px);
+    position: fixed;
+    bottom: 60px;
+    left: 10px;
+}
+
+/* mic test bar */
+#pill-frame-pattern {
+    color: var(--background-secondary);
+}
+
+/* Remove shop icons */
+.content__23cab li:nth-child(3) .linkButton_ebd2ba,
+.content__23cab li:nth-child(4) .linkButton_ebd2ba{
+    display: none;
+}
+
+/* move friends button */
+.content__23cab li:nth-child(2) .linkButton_ebd2ba{
+    position: fixed;
+    top: 25px;
+    left: 67px;
+    width: 50px;
+}
+
+.content__23cab li:nth-child(2) .content_f767b8 {
+    display: none;
+}
+
+.content__23cab li:nth-child(2) .linkButton_ebd2ba {
+    background: none;
+}
+
+/* remove dms text */
+.privateChannelsHeaderContainer_ddcec6 {
+    padding: 0;
+    height: 0;
+}
+
+.privateChannelsHeaderContainer_ddcec6 .headerText__051c0 {
+    display: none;
+}
+
+/* move + button */
+.privateChannelsHeaderContainer_ddcec6 .privateChannelRecipientsInviteButtonIcon__1e8fc {
+    position: fixed;
+    top: 32px;
+    left: 285px;
+    padding: 5px;
+}
+
+/* move search bar to make space for above buttons*/
+
+.searchBar_e4ea2a {
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.searchBar_e4ea2a .searchBarComponent__22760 {
+    font-size: 13.7px;
 }
