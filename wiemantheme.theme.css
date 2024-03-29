@@ -1,7 +1,7 @@
 /**
  * @name WiemanTheme
  * @author wiemanboy
- * @version 1.1.1
+ * @version 1.1.2
  * @description My very own discord theme! :)
  * @source https://github.com/wiemanboy/WiemanTheme
  */
@@ -357,39 +357,39 @@
 }
 
 /* Remove shop icons */
-.content__23cab li:nth-child(3) .linkButton_ebd2ba,
-.content__23cab li:nth-child(4) .linkButton_ebd2ba{
+.content__690c5 li:nth-child(3) .linkButton__9da2c,
+.content__690c5 li:nth-child(4) .linkButton__9da2c{
     display: none;
 }
 
 /* move friends button */
-.content__23cab li:nth-child(2) .linkButton_ebd2ba{
+.content__690c5 li:nth-child(2) .linkButton__9da2c{
     position: fixed;
     top: 25px;
     left: 67px;
     width: 50px;
 }
 
-.content__23cab li:nth-child(2) .content_f767b8 {
-    display: none;
+.content__690c5 li:nth-child(2) .linkButton__9da2c{
+    background: none;
 }
 
-.content__23cab li:nth-child(2) .linkButton_ebd2ba {
+.content__690c5 li:nth-child(2) .linkButton_ebd2ba {
     background: none;
 }
 
 /* remove dms text */
-.privateChannelsHeaderContainer_ddcec6 {
+.privateChannelsHeaderContainer_b22dc9 {
     padding: 0;
     height: 0;
 }
 
-.privateChannelsHeaderContainer_ddcec6 .headerText__051c0 {
+.headerText__88997 {
     display: none;
 }
 
 /* move + button */
-.privateChannelsHeaderContainer_ddcec6 .privateChannelRecipientsInviteButtonIcon__1e8fc {
+.privateChannelRecipientsInviteButtonIcon__459c2 {
     position: fixed;
     top: 32px;
     left: 285px;
@@ -398,11 +398,11 @@
 
 /* move search bar to make space for above buttons*/
 
-.searchBar_e4ea2a {
+.searchBar__621ec {
     margin-left: 30px;
     margin-right: 15px;
 }
 
-.searchBar_e4ea2a .searchBarComponent__22760 {
+.searchBarComponent__8f95f {
     font-size: 13.7px;
 }
