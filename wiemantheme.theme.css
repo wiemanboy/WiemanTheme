@@ -126,7 +126,7 @@
 }
 
 /* title */
-.typeWindows__5fa63::after {
+.typeWindows_e41dab::after {
     font-weight: bold;
     font-family: inherit;
     color: var(--custom-color1);
@@ -136,7 +136,7 @@
 }
 
 /* top icon */
-.typeWindows__5fa63::before {
+.typeWindows_e41dab::before {
     transform: scale(0.2);
     position: absolute;
     top: -40px;
@@ -145,7 +145,7 @@
 }
 
 /* remove discord logo */
-.wordmarkWindows__05c46 {
+.wordmarkWindows_ffbc5e {
     display: none;
 }
 
