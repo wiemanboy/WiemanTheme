@@ -154,11 +154,6 @@
     background: var(--primary3);
 }
 
-/* emoji button */
-.emojiButton__8ff6a {
-    filter: brightness(65%);
-}
-
 /* spotify invite */
 :root .invite-3uuHYQ {
     background: var(--primary4);
