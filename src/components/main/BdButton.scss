@@ -1,0 +1,20 @@
+.bd-notice, .bd-button {
+  background-color: var(--custom-color2)
+}
+
+.bd-addon-views .bd-view-button.selected {
+  background: var(--custom-color1);
+}
+
+.bd-button.bd-button-danger {
+  background: var(--danger);
+}
+
+.bd-button:hover {
+  background-color: var(--custom-color1);
+}
+
+.bd-button:active {
+  background-color: var(--custom-color1);
+  filter: brightness(1.5);
+}

@@ -1,0 +1,112 @@
+.theme-dark{
+  --icon: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='slime'%3E%3Cpath id='tail' d='M97.5 41C97.5 49.7694 95.5603 57.6838 92.4491 63.388C89.3277 69.1111 85.0977 72.5 80.5469 72.5C75.9961 72.5 71.7661 69.1111 68.6446 63.388C65.5335 57.6838 63.5938 49.7694 63.5938 41C63.5938 32.2306 65.5335 24.3162 68.6446 18.612C71.7661 12.8889 75.9961 9.5 80.5469 9.5C85.0977 9.5 89.3277 12.8889 92.4491 18.612C95.5603 24.3162 97.5 32.2306 97.5 41Z' fill='url(%23paint0_linear_10_55)' stroke='black'/%3E%3Cg id='right-ear'%3E%3Cpath d='M29.5614 21.5443C27.5749 16.0354 24.3484 11.5584 20.7125 8.7817C17.082 6.00906 12.9805 4.89269 9.30844 6.26933C5.63641 7.64597 3.22102 11.2055 2.21669 15.7158C1.2109 20.2326 1.59714 25.7744 3.58366 31.2833C5.57017 36.7922 8.7967 41.2692 12.4325 44.0459C16.0631 46.8185 20.1646 47.9349 23.8366 46.5583C27.5087 45.1816 29.9241 41.6221 30.9284 37.1118C31.9342 32.595 31.548 27.0532 29.5614 21.5443Z' fill='%23AA4400' stroke='black'/%3E%3Cellipse rx='16.6547' ry='9.63717' transform='matrix(-0.339219 -0.940707 0.93636 -0.35104 16.6734 26.0502)' fill='%23DDAA00'/%3E%3C/g%3E%3Cg id='left-ear'%3E%3Cpath d='M84.5615 31.2833C82.575 36.7922 79.3485 41.2692 75.7127 44.0459C72.0821 46.8186 67.9806 47.935 64.3086 46.5583C60.6365 45.1817 58.2211 41.6222 57.2168 37.1119C56.211 32.5951 56.5972 27.0533 58.5837 21.5444C60.5702 16.0355 63.7967 11.5585 67.4326 8.78177C71.0631 6.00911 75.1646 4.89273 78.8367 6.26936C82.5087 7.64599 84.9241 11.2055 85.9284 15.7158C86.9343 20.2326 86.548 25.7744 84.5615 31.2833Z' fill='%23AA4400' stroke='black'/%3E%3Cellipse rx='16.6547' ry='9.63717' transform='matrix(-0.339231 0.940703 -0.944901 -0.327356 71.6734 26.0502)' fill='%23DDAA00'/%3E%3C/g%3E%3Cg id='body'%3E%3Cpath d='M85 77C85 79.0668 83.9512 81.1049 81.9129 83.0265C79.8758 84.9469 76.8986 86.7015 73.1756 88.1861C65.7335 91.1536 55.4185 93 44 93C32.5815 93 22.2665 91.1536 14.8244 88.1861C11.1014 86.7015 8.12415 84.9469 6.08706 83.0265C4.04877 81.1049 3 79.0668 3 77C3 74.9332 4.04877 72.8951 6.08706 70.9735C8.12415 69.0531 11.1014 67.2985 14.8244 65.8139C22.2665 62.8464 32.5815 61 44 61C55.4185 61 65.7335 62.8464 73.1756 65.8139C76.8986 67.2985 79.8758 69.0531 81.9129 70.9735C83.9512 72.8951 85 74.9332 85 77Z' fill='%23DDAA00' stroke='black'/%3E%3Cpath d='M82.7856 52C82.7856 74.0914 64.925 92 42.8928 92C20.8606 92 3 74.0914 3 52C3 29.9086 20.8606 12 42.8928 12C64.925 12 82.7856 29.9086 82.7856 52Z' fill='%23DDAA00'/%3E%3Cpath d='M84.5 52.2754C83.9859 57.7917 83.307 61.9065 82.4743 64.8912C81.6365 67.8943 80.661 69.6847 79.6056 70.6265C78.5937 71.5295 77.461 71.6928 76.122 71.299C74.7458 70.8944 73.1848 69.9064 71.4244 68.528C69.9313 67.3589 68.3328 65.9404 66.6178 64.4185C66.3182 64.1526 66.015 63.8836 65.7082 63.6122C63.652 61.7931 61.4429 59.8761 59.0944 58.1309C54.4053 54.6463 49.0985 51.7985 43.2423 51.7985C37.3907 51.7985 32.1181 54.5475 27.4753 57.9149C25.1505 59.6011 22.9695 61.4531 20.9432 63.2105C20.6128 63.497 20.2868 63.7807 19.9652 64.0607C18.3072 65.5039 16.7633 66.8478 15.321 67.9588C13.5928 69.2902 12.0636 70.2439 10.7167 70.6344C9.40572 71.0146 8.29922 70.8562 7.31128 69.9867C6.28092 69.0798 5.32637 67.3542 4.50298 64.4551C3.68472 61.5741 3.01397 57.6015 2.50001 52.2745C2.51327 30.308 20.7462 12 43.2423 12C65.7467 12 84.4868 30.3164 84.5 52.2754Z' fill='%23AA4400' stroke='black'/%3E%3C/g%3E%3Cg id='crest'%3E%3Cpath d='M30.5469 34.3456L43.2781 29.5345L56.0093 34.3456V43.6544L43.2781 48.4655L30.5469 43.6544V34.3456Z' fill='%23882200' stroke='black'/%3E%3Cpath d='M44.2514 18.3456L56.9826 13.5345L69.7138 18.3456V27.6544L56.9826 32.4655L44.2514 27.6544V18.3456Z' fill='%23882200' stroke='black'/%3E%3Cpath d='M16.5469 18.3456L29.2781 13.5345L42.0093 18.3456V27.6544L29.2781 32.4655L16.5469 27.6544V18.3456Z' fill='%23882200' stroke='black'/%3E%3C/g%3E%3Cg id='left-eye-brow'%3E%3Cpath id='left-brow' d='M77.8946 39.1213L62.6165 47.1213' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3Cpath id='left-eye' d='M63 48C63 50.7614 65.8299 52 69.205 52C72.5802 52 75.3163 49.7614 75.3163 47C75.3163 44.2386 72.5 43 72.5 43C63 48 72.5 43 63 48Z' fill='black'/%3E%3C/g%3E%3Cg id='right-eye-brow'%3E%3Cpath id='right-brow' d='M8.61652 39.1213L23.8946 47.1213' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3Cpath id='right-eye' d='M23.5111 48C23.5111 50.7614 20.6812 52 17.3061 52C13.9309 52 11.1948 49.7614 11.1948 47C11.1948 44.2386 14.0111 43 14.0111 43C23.5111 48 14.0111 43 23.5111 48Z' fill='black'/%3E%3C/g%3E%3Cpath id='mouth' d='M33.5562 57L33.73 57.3739C37.772 66.0666 50.2095 65.8364 53.927 57' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/g%3E%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_10_55' x1='80.5469' y1='9' x2='80.5469' y2='73' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23AA4400'/%3E%3Cstop offset='0.05' stop-color='%23AA4400'/%3E%3Cstop offset='0.05' stop-color='%23882200'/%3E%3Cstop offset='0.15' stop-color='%23882200'/%3E%3Cstop offset='0.15' stop-color='%23AA4400'/%3E%3Cstop offset='0.2' stop-color='%23AA4400'/%3E%3Cstop offset='0.2' stop-color='%23DDAA00'/%3E%3Cstop offset='0.3' stop-color='%23DDAA00'/%3E%3Cstop offset='0.3' stop-color='%23AA4400'/%3E%3Cstop offset='0.35' stop-color='%23AA4400'/%3E%3Cstop offset='0.35' stop-color='%23882200'/%3E%3Cstop offset='0.45' stop-color='%23882200'/%3E%3Cstop offset='0.45' stop-color='%23AA4400'/%3E%3Cstop offset='0.5' stop-color='%23AA4400'/%3E%3Cstop offset='0.5' stop-color='%23DDAA00'/%3E%3Cstop offset='0.6' stop-color='%23DDAA00'/%3E%3Cstop offset='0.6' stop-color='%23AA4400'/%3E%3Cstop offset='0.65' stop-color='%23AA4400'/%3E%3Cstop offset='0.65' stop-color='%23882200'/%3E%3Cstop offset='0.75' stop-color='%23882200'/%3E%3Cstop offset='0.75' stop-color='%23AA4400'/%3E%3Cstop offset='0.8' stop-color='%23AA4400'/%3E%3Cstop offset='0.8' stop-color='%23DDAA00'/%3E%3Cstop offset='1' stop-color='%23DDAA00'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cstyle%3E @keyframes close-eye %7B 5%25 %7Btransform: scaleY(0.1)%7D 10%25 %7Btransform: scaleY(1)%7D %7D @keyframes close-right-brow %7B 5%25 %7Btransform: rotate(-27deg) translateY(2px)%7D 10%25 %7Btransform: rotate(0deg) translate(0)%7D %7D @keyframes close-left-brow %7B 5%25 %7Btransform: rotate(27deg) translateY(2px)%7D 10%25 %7Btransform: rotate(0deg) translate(0)%7D %7D %23left-eye, %23right-eye %7B transform-origin: center; animation: close-eye; %7D %23left-brow %7B transform-origin: 62px 47px; animation: close-left-brow; %7D %23right-brow %7B transform-origin: 24px 47px; animation: close-right-brow; %7D %23right-brow, %23left-brow, %23left-eye, %23right-eye %7B animation-duration: 10s; animation-iteration-count: infinite; %7D @keyframes wag %7B 0%25 %7Btransform: rotate(-5deg)%7D 50%25 %7Btransform: rotate(5deg)%7D 100%25 %7Btransform: rotate(-5deg)%7D %7D %23tail %7B transform-origin: 75px 60px; animation: wag; animation-duration: 5s; animation-iteration-count: infinite; %7D @keyframes ear-twitch %7B 0.8%25 %7Btransform: rotate(0deg)%7D 0.9%25 %7Btransform: rotate(20deg)%7D 1%25 %7Btransform: rotate(0deg)%7D %7D %23left-ear %7B transform-origin: center; animation: ear-twitch; animation-duration: 90s; animation-iteration-count: infinite; %7D @keyframes bounce %7B 0%25 %7Btransform: scaleY(1)%7D 50%25 %7Btransform: scaleY(0.99)%7D 100%25 %7Btransform: scaleY(1)%7D %7D %23slime %7B transform-origin: center; animation: bounce; animation-duration: 3s; animation-iteration-count: infinite; %7D %3C/style%3E%3C/svg%3E");
+
+  --rgb-custom-color1: 128, 0, 128;
+  --rgb-custom-color2: 192 0 192;
+
+  --custom-color1: #c000c0;
+  --custom-color2: #800080;
+  --custom-color1-gradient: linear-gradient(90deg, var(--custom-color2) 0%, var(--custom-color1) 80%);
+  --custom-color2-gradient: linear-gradient(90deg, var(--custom-color2) 0%, var(--custom-color1) 20%, var(--custom-color1) 80%, var(--custom-color2) 100%);
+
+  --primary1: #000000;
+  --primary2: #0f0f0f;
+  --primary3: #161616;
+  --primary4: #0c0c0c;
+  --primary5: #131313;
+  --primary6: #090909;
+
+  --secondary1: #808080;
+  --secondary2: #505050;
+  --secondary3: #d0d0d0;
+  --secondary4: #707070;
+
+  --warning: #ff7722;
+  --danger: #f00000;
+  --WIP: red;
+
+  /* color changes*/
+
+  /* servers background*/
+  --background-tertiary: var(--primary1);
+
+  /* message background */
+  --background-primary: var(--primary3);
+  --background-message-hover: var(--primary5);
+
+  /* dms background */
+  --background-secondary: var(--primary2);
+
+  /* dms text color*/
+  --channels-default: var(--secondary1);
+  --interactive-muted: var(--secondary2);
+  --text-normal: var(--secondary3);
+  --text-muted: var(--secondary4);
+
+  /* mention dms */
+  --mention-foreground: var(--secondary3);
+  --mention-background: rgba(var(--rgb-custom-color1), 0.7);
+  --info-warning-foreground: var(--custom-color1);
+  --background-mentioned: rgba(var(--rgb-custom-color1), 0.4);
+  --background-mentioned-hover: rgba(var(--rgb-custom-color1), 0.5);
+
+  /* icons */
+  --interactive-normal: var(--secondary1);
+  --interactive-hover: var(--secondary3);
+  --interactive-active: var(--secondary3);
+
+  /* profile background */
+  --background-secondary-alt: var(--primary1);
+
+  /* select */
+  --background-modifier-selected: var(--primary5);
+  --background-modifier-hover: var(--primary4);
+
+  /* input */
+  --channeltextarea-background: var(--primary4);
+  --input-background: var(--primary4);
+
+  /* scrollbar */
+  --scrollbar-auto-track: var(--primary2);
+  --scrollbar-auto-thumb: var(--primary1);
+
+  /* link */
+  --text-link: var(--custom-color1);
+
+  /* buttons */
+  --brand-experiment-560: var(--custom-color1);
+  --brand-experiment: var(--custom-color2);
+  --brand-experiment-600: var(--custom-color2-gradient);
+
+  /* gif select */
+  --primary-dark-500: var(--primary5);
+
+  /* chat */
+  --background-floating: var(--primary6);
+
+  /* link popup */
+  --modal-background: var(--primary5);
+  --modal-footer-background: var(--primary6);
+  --button-secondary-background: var(--primary2);
+  --button-secondary-background-hover: var(--primary3);
+
+  /* audio player */
+  --primary-dark-600: var(--primary3);
+
+  /* @-menu */
+  --primary-dark-630: var(--primary2);
+
+  /* radio button */
+  --brand-experiment-500: var(--custom-color1);
+
+  /* disconnected */
+  --status-yellow-500: var(--warning);
+
+  /* channel # background */
+  --background-accent: var(--primary1)
+}
+
+/* @-menu */
+.theme-dark .autocomplete_df266d{
+  background-color: var(--primary2);
+}
