@@ -188,29 +188,29 @@
 }
 
 /* member menu */
-.membersWrap__90226, .container_b2ce9c {
+.membersWrap__5ca6b {
     width: 70px;
     min-width: 70px;
 }
 
-.members__9f47b {
+.members__573eb {
     width: 70px;
     height: calc(100vh - 48px - 22px);
     transition: ease-in 0.1s;
 }
 
 /* extend member menu */
-.members__9f47b:hover {
+.members__573eb:hover {
     width: 240px;
 }
 
 /* extend member menu in DM group */
-.membersWrap__90226 .members__9f47b:hover {
+.membersWrap__5ca6b .members__573eb:hover {
     transform: translateX(-165px);
 }
 
 /* extend member menu in server */
-.membersWrap__90226.hiddenMembers__48fe9 .members__9f47b:hover {
+.membersWrap__5ca6b.hiddenMembers__0524b .members__573eb:hover {
     transform: translateX(-80px);
 }
 
@@ -234,12 +234,12 @@
 }
 
 /* hide activity/username/bottag */
-.activity__3cbac, .username_d272d6, .botTag_a52f38 {
+.activity_bafb94, .username__4a6f7, .botTag_a52f38 {
     display: none;
 }
 
 /* hide and style role text */
-.membersGroup__85843 {
+.membersGroup_cad095 {
     padding-top: 0;
     padding-left: 8px;
     margin-left: 8px;
@@ -252,17 +252,17 @@
 }
 
 /* show roles + animate */
-.container_b2ce9c:hover .membersGroup__85843, .membersWrap__90226:hover .membersGroup__85843 {
+.container__43554:hover .membersGroup_cad095, .membersWrap__5ca6b:hover .membersGroup_cad095 {
     color: var(--secondary3);
 }
 
 /* animate username */
-.container_b2ce9c:hover .username_d272d6, .membersWrap__90226:hover .username_d272d6 {
+.container__43554:hover .username__4a6f7, .membersWrap__5ca6b:hover .username__4a6f7 {
     display: flex;
 }
 
 /* animate activity */
-.container_b2ce9c:hover .activity__3cbac, .membersWrap__90226:hover .activity__3cbac {
+.container__43554:hover .activity_bafb94, .membersWrap__5ca6b:hover .activity_bafb94 {
     display: flex;
     transform-origin: top;
     transform: rotateX(-90deg);
@@ -270,7 +270,7 @@
 }
 
 /* animate bottag */
-.container_b2ce9c:hover .botTag_a52f38, .membersWrap__90226:hover .botTag_a52f38 {
+.container__43554:hover .botTag_a52f38, .membersWrap__5ca6b:hover .botTag_a52f38 {
     display: flex;
     transform-origin: left;
     transform: rotateX(-90deg);
@@ -315,7 +315,7 @@
 }
 
 /* move owner icon */
-.ownerIcon__827bd {
+.ownerIcon_bd8e7d {
     position: absolute;
     transform: translateX(-21px) translateY(7px) rotate(5deg) scale(0.9);
     background-color: var(--background-secondary);
