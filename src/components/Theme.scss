@@ -1,110 +1,120 @@
 .theme-dark {
-  --rgb-custom-color1: 128, 0, 128;
-  --rgb-custom-color2: 192 0 192;
+    --rgb-custom-color1: 128, 0, 128;
+    --rgb-custom-color2: 192 0 192;
 
-  --custom-color1: #c000c0;
-  --custom-color2: #800080;
-  --custom-color1-gradient: linear-gradient(90deg, var(--custom-color2) 0%, var(--custom-color1) 80%);
-  --custom-color2-gradient: linear-gradient(90deg, var(--custom-color2) 0%, var(--custom-color1) 20%, var(--custom-color1) 80%, var(--custom-color2) 100%);
+    --custom-color1: #c000c0;
+    --custom-color2: #800080;
+    --custom-color1-gradient: linear-gradient(
+        90deg,
+        var(--custom-color2) 0%,
+        var(--custom-color1) 80%
+    );
+    --custom-color2-gradient: linear-gradient(
+        90deg,
+        var(--custom-color2) 0%,
+        var(--custom-color1) 20%,
+        var(--custom-color1) 80%,
+        var(--custom-color2) 100%
+    );
 
-  --primary1: #000000;
-  --primary2: #0f0f0f;
-  --primary3: #161616;
-  --primary4: #0c0c0c;
-  --primary5: #131313;
-  --primary6: #090909;
+    --primary1: #000000;
+    --primary2: #0f0f0f;
+    --primary3: #161616;
+    --primary4: #0c0c0c;
+    --primary5: #131313;
+    --primary6: #090909;
 
-  --secondary1: #808080;
-  --secondary2: #505050;
-  --secondary3: #d0d0d0;
-  --secondary4: #707070;
+    --secondary1: #808080;
+    --secondary2: #505050;
+    --secondary3: #d0d0d0;
+    --secondary4: #707070;
 
-  --warning: #ff7722;
-  --danger: #f00000;
-  --WIP: red;
+    --warning: #ff7722;
+    --danger: #f00000;
+    --WIP: red;
 
-  /* color changes*/
+    /* color changes*/
 
-  /* servers background*/
-  --background-tertiary: var(--primary1);
+    /* servers background*/
+    --background-tertiary: var(--primary1);
 
-  /* message background */
-  --background-primary: var(--primary3);
-  --background-message-hover: var(--primary5);
+    /* message background */
+    --background-primary: var(--primary3);
+    --background-message-hover: var(--primary5);
 
-  /* dms background */
-  --background-secondary: var(--primary2);
+    /* dms background */
+    --background-secondary: var(--primary2);
 
-  /* dms text color*/
-  --channels-default: var(--secondary1);
-  --interactive-muted: var(--secondary2);
-  --text-normal: var(--secondary3);
-  --text-muted: var(--secondary4);
+    /* dms text color*/
+    --channels-default: var(--secondary1);
+    --interactive-muted: var(--secondary2);
+    --text-normal: var(--secondary3);
+    --text-muted: var(--secondary4);
 
-  /* mention dms */
-  --mention-foreground: var(--secondary3);
-  --mention-background: rgba(var(--rgb-custom-color1), 0.7);
-  --info-warning-foreground: var(--custom-color1);
-  --background-mentioned: rgba(var(--rgb-custom-color1), 0.4);
-  --background-mentioned-hover: rgba(var(--rgb-custom-color1), 0.5);
+    /* mention dms */
+    --mention-foreground: var(--secondary3);
+    --mention-background: rgba(var(--rgb-custom-color1), 0.7);
+    --info-warning-foreground: var(--custom-color1);
+    --background-mentioned: rgba(var(--rgb-custom-color1), 0.4);
+    --background-mentioned-hover: rgba(var(--rgb-custom-color1), 0.5);
 
-  /* icons */
-  --interactive-normal: var(--secondary1);
-  --interactive-hover: var(--secondary3);
-  --interactive-active: var(--secondary3);
+    /* icons */
+    --interactive-normal: var(--secondary1);
+    --interactive-hover: var(--secondary3);
+    --interactive-active: var(--secondary3);
 
-  /* profile background */
-  --background-secondary-alt: var(--primary1);
+    /* profile background */
+    --background-secondary-alt: var(--primary1);
 
-  /* select */
-  --background-modifier-selected: var(--primary5);
-  --background-modifier-hover: var(--primary4);
+    /* select */
+    --background-modifier-selected: var(--primary5);
+    --background-modifier-hover: var(--primary4);
 
-  /* input */
-  --channeltextarea-background: var(--primary4);
-  --input-background: var(--primary4);
+    /* input */
+    --channeltextarea-background: var(--primary4);
+    --input-background: var(--primary4);
 
-  /* scrollbar */
-  --scrollbar-auto-track: var(--primary2);
-  --scrollbar-auto-thumb: var(--primary1);
+    /* scrollbar */
+    --scrollbar-auto-track: var(--primary2);
+    --scrollbar-auto-thumb: var(--primary1);
 
-  /* link */
-  --text-link: var(--custom-color1);
+    /* link */
+    --text-link: var(--custom-color1);
 
-  /* buttons */
-  --brand-experiment-560: var(--custom-color1);
-  --brand-experiment: var(--custom-color2);
-  --brand-experiment-600: var(--custom-color2-gradient);
+    /* buttons */
+    --brand-experiment-560: var(--custom-color1);
+    --brand-experiment: var(--custom-color2);
+    --brand-experiment-600: var(--custom-color2-gradient);
 
-  /* gif select */
-  --primary-dark-500: var(--primary5);
+    /* gif select */
+    --primary-dark-500: var(--primary5);
 
-  /* chat */
-  --background-floating: var(--primary6);
+    /* chat */
+    --background-floating: var(--primary6);
 
-  /* link popup */
-  --modal-background: var(--primary5);
-  --modal-footer-background: var(--primary6);
-  --button-secondary-background: var(--primary2);
-  --button-secondary-background-hover: var(--primary3);
+    /* link popup */
+    --modal-background: var(--primary5);
+    --modal-footer-background: var(--primary6);
+    --button-secondary-background: var(--primary2);
+    --button-secondary-background-hover: var(--primary3);
 
-  /* audio player */
-  --primary-dark-600: var(--primary3);
+    /* audio player */
+    --primary-dark-600: var(--primary3);
 
-  /* @-menu */
-  --primary-dark-630: var(--primary2);
+    /* @-menu */
+    --primary-dark-630: var(--primary2);
 
-  /* radio button */
-  --brand-experiment-500: var(--custom-color1);
+    /* radio button */
+    --brand-experiment-500: var(--custom-color1);
 
-  /* disconnected */
-  --status-yellow-500: var(--warning);
+    /* disconnected */
+    --status-yellow-500: var(--warning);
 
-  /* channel # background */
-  --background-accent: var(--primary1);
+    /* channel # background */
+    --background-accent: var(--primary1);
 
-  /* @-menu */
-  &.autocomplete_df266d {
-    background-color: var(--primary2);
-  }
+    /* @-menu */
+    &.autocomplete_df266d {
+        background-color: var(--primary2);
+    }
 }

@@ -1,36 +1,36 @@
 /* animate profile popup */
 @keyframes slide-out {
-  0% {
-    width: 130px;
-  }
-  100% {
-  }
+    0% {
+        width: 130px;
+    }
+    100% {
+    }
 }
 
 /* animations for profile popout */
 @keyframes slide-down {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 400px;
-  }
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 400px;
+    }
 }
 
 /* animate popout */
 .userPopoutOuter__3884e {
-  animation: slide-out 0.1s ease-in-out forwards;
+    animation: slide-out 0.1s ease-in-out forwards;
 }
 
 /* animate popout info */
 .userPopoutOverlayBackground_bf6444 {
-  height: 0;
-  animation: slide-down 0.15s ease-in-out 0.1s forwards;
+    height: 0;
+    animation: slide-down 0.15s ease-in-out 0.1s forwards;
 }
 
 /* animate popout badges */
 .profileBadges__7a7cb {
-  transform-origin: top;
-  transform: rotateX(-90deg);
-  animation: drop-down 0.15s ease-in-out 0.1s forwards;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    animation: drop-down 0.15s ease-in-out 0.1s forwards;
 }
