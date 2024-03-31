@@ -1,23 +1,19 @@
-/* Remove shop icons */
-.content__690c5 li:nth-child(3) .linkButton__9da2c,
-.content__690c5 li:nth-child(4) .linkButton__9da2c{
-  display: none;
-}
+.content__690c5 {
+  li:nth-child(3), li:nth-child(4) {
+    .linkButton__9da2c {
+      display: none;
+    }
+  }
 
-/* move friends button */
-.content__690c5 li:nth-child(2) .linkButton__9da2c{
-  position: fixed;
-  top: 25px;
-  left: 67px;
-  width: 50px;
-}
-
-.content__690c5 li:nth-child(2) .linkButton__9da2c{
-  background: none;
-}
-
-.content__690c5 li:nth-child(2) .linkButton_ebd2ba {
-  background: none;
+  li:nth-child(2) {
+    .linkButton__9da2c {
+      position: fixed;
+      top: 25px;
+      left: 67px;
+      width: 50px;
+      background: none;
+    }
+  }
 }
 
 /* remove dms text */
@@ -39,7 +35,6 @@
 }
 
 /* move search bar to make space for above buttons*/
-
 .searchBar__621ec {
   margin-left: 30px;
   margin-right: 15px;
