@@ -1,27 +1,23 @@
 .membersWrap__5ca6b {
   width: 70px;
   min-width: 70px;
-}
 
-.members__573eb {
-  width: 70px;
-  height: calc(100vh - 48px - 22px);
-  transition: ease-in 0.1s;
-}
+  /* extend member menu in DM*/
+  .members__573eb {
+    width: 70px;
+    height: calc(100vh - 48px - 22px);
+    transition: ease-in 0.1s;
 
-/* extend member menu */
-.members__573eb:hover {
-  width: 240px;
-}
+    &:hover {
+      transform: translateX(-165px);
+      width: 240px;
+    }
+  }
 
-/* extend member menu in DM group */
-.membersWrap__5ca6b .members__573eb:hover {
-  transform: translateX(-165px);
-}
-
-/* extend member menu in server */
-.membersWrap__5ca6b.hiddenMembers__0524b .members__573eb:hover {
-  transform: translateX(-80px);
+  /* extend member menu in server */
+  &.hiddenMembers__0524b .members__573eb:hover {
+    transform: translateX(-80px);
+  }
 }
 
 /* animations for members menu*/
@@ -61,30 +57,29 @@
   border-top-style: solid;
 }
 
-/* show roles + animate */
-.container__43554:hover .membersGroup_cad095, .membersWrap__5ca6b:hover .membersGroup_cad095 {
-  color: var(--secondary3);
-}
+/* animate components */
+.container__43554:hover, .membersWrap__5ca6b:hover {
+  .membersGroup_cad095 {
+    color: var(--secondary3);
+  }
 
-/* animate username */
-.container__43554:hover .username__4a6f7, .membersWrap__5ca6b:hover .username__4a6f7 {
-  display: flex;
-}
+  .username__4a6f7 {
+    display: flex;
+  }
 
-/* animate activity */
-.container__43554:hover .activity_bafb94, .membersWrap__5ca6b:hover .activity_bafb94 {
-  display: flex;
-  transform-origin: top;
-  transform: rotateX(-90deg);
-  animation: drop-down 0.1s ease-in-out 0.1s forwards;
-}
+  .activity_bafb94 {
+    display: flex;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    animation: drop-down 0.1s ease-in-out 0.1s forwards;
+  }
 
-/* animate bottag */
-.container__43554:hover .botTag_a52f38, .membersWrap__5ca6b:hover .botTag_a52f38 {
-  display: flex;
-  transform-origin: left;
-  transform: rotateX(-90deg);
-  animation: drop-right 0.1s ease-in-out 0.2s forwards;
+  .botTag_a52f38 {
+    display: flex;
+    transform-origin: left;
+    transform: rotateX(-90deg);
+    animation: drop-right 0.1s ease-in-out 0.2s forwards;
+  }
 }
 
 /* move owner icon */
