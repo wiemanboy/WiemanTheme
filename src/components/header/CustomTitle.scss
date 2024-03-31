@@ -1,19 +1,22 @@
-.typeWindows_e41dab::after {
-  font-weight: bold;
-  font-family: inherit;
-  color: var(--custom-color1);
-  position: absolute;
-  left: 10px;
-  content: "WiemanTheme";
-}
+.typeWindows_e41dab {
+  /* title */
+  &::after {
+    font-weight: bold;
+    font-family: inherit;
+    color: var(--custom-color1);
+    position: absolute;
+    left: 10px;
+    content: "WiemanTheme";
+  }
 
-/* top icon */
-.typeWindows_e41dab::before {
-  transform: scale(0.2);
-  position: absolute;
-  top: -40px;
-  left: 80px;
-  content: var(--icon);
+  /* top icon */
+  &::before {
+    transform: scale(0.2);
+    position: absolute;
+    top: -40px;
+    left: 80px;
+    content: var(--icon);
+  }
 }
 
 /* remove discord logo */
