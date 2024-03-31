@@ -6,9 +6,14 @@
  * @source https://github.com/wiemanboy/WiemanTheme
  */
 
-@import "assets/Icons",
- "components/Theme", "components/header/CustomTitle",
-"components/main/DmMenu", "components/main/MembersMenu",
-"components/settings/BdButton", "components/main/Button",
-"components/main/SpotifyInvite", "components/main/profile/Banner",
-"components/main/profile/Popout", "components/settings/MicTestBar";
+@import "assets/Icons";
+@import "components/Theme";
+@import "components/header/CustomTitle";
+@import "components/main/DmMenu";
+@import "components/main/MembersMenu";
+@import "components/settings/BdButton";
+@import "components/main/Button";
+@import "components/main/SpotifyInvite";
+@import "components/main/profile/Banner";
+@import "components/main/profile/Popout";
+@import "components/settings/MicTestBar";
