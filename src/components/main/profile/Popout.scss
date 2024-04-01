@@ -1,4 +1,5 @@
-/* animate profile popup */
+/* Popout */
+// animations for profile popout
 @keyframes slide-out {
     0% {
         width: 130px;
@@ -7,7 +8,6 @@
     }
 }
 
-/* animations for profile popout */
 @keyframes slide-down {
     0% {
         height: 0;
@@ -17,18 +17,18 @@
     }
 }
 
-/* animate popout */
+// animate popout
 .userPopoutOuter__3884e {
     animation: slide-out 0.1s ease-in-out forwards;
 }
 
-/* animate popout info */
+// animate popout info
 .userPopoutOverlayBackground_bf6444 {
     height: 0;
     animation: slide-down 0.15s ease-in-out 0.1s forwards;
 }
 
-/* animate popout badges */
+// animate popout badges
 .profileBadges__7a7cb {
     transform-origin: top;
     transform: rotateX(-90deg);

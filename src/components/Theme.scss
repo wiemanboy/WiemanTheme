@@ -1,10 +1,11 @@
+/* Theme */
 .theme-dark {
     $custom-color1: #c000c0;
     $custom-color2: #6500a3;
 
-    /* prettier-ignore */
+    // prettier-ignore
     --rgb-custom-color1: #{red($custom-color1)}, #{green($custom-color1)}, #{blue($custom-color1)};
-    /* prettier-ignore */
+    // prettier-ignore
     --rgb-custom-color2: #{red($custom-color2)}, #{green($custom-color2)}, #{blue($custom-color2)};
 
     --custom-color1: #{$custom-color1};
@@ -39,87 +40,87 @@
     --danger: #de003e;
     --WIP: red;
 
-    /* color changes*/
+    // default discord color changes
 
-    /* servers background*/
+    // servers background
     --background-tertiary: var(--primary1);
 
-    /* message background */
+    // message background
     --background-primary: var(--primary3);
     --background-message-hover: var(--primary5);
 
-    /* dms background */
+    // dms background
     --background-secondary: var(--primary2);
 
-    /* dms text color*/
+    // dms text color
     --channels-default: var(--secondary1);
     --interactive-muted: var(--secondary2);
     --text-normal: var(--secondary3);
     --text-muted: var(--secondary4);
 
-    /* mention dms */
+    // mention dms
     --mention-foreground: var(--secondary3);
     --mention-background: rgba(var(--rgb-custom-color2), 1);
     --info-warning-foreground: var(--custom-color2);
     --background-mentioned: rgba(var(--rgb-custom-color2), 0.4);
     --background-mentioned-hover: rgba(var(--rgb-custom-color2), 0.5);
 
-    /* icons */
+    // icons
     --interactive-normal: var(--secondary1);
     --interactive-hover: var(--secondary3);
     --interactive-active: var(--secondary3);
 
-    /* profile background */
+    // profile background
     --background-secondary-alt: var(--primary1);
 
-    /* select */
+    // select
     --background-modifier-selected: var(--primary5);
     --background-modifier-hover: var(--primary4);
 
-    /* input */
+    // input
     --channeltextarea-background: var(--primary4);
     --input-background: var(--primary4);
 
-    /* scrollbar */
+    // scrollbar
     --scrollbar-auto-track: var(--primary2);
     --scrollbar-auto-thumb: var(--primary1);
 
-    /* link */
+    // link
     --text-link: var(--custom-color1);
 
-    /* buttons */
+    // buttons
     --brand-experiment-560: var(--custom-color2);
     --brand-experiment: var(--custom-color2);
     --brand-experiment-600: var(--custom-color2-gradient);
 
-    /* gif select */
+    // gif select
     --primary-dark-500: var(--primary5);
 
-    /* chat */
+    // chat
     --background-floating: var(--primary6);
 
-    /* link popup */
+    // link popup
     --modal-background: var(--primary5);
     --modal-footer-background: var(--primary6);
     --button-secondary-background: var(--primary2);
     --button-secondary-background-hover: var(--primary3);
 
-    /* audio player */
+    // audio player
     --primary-dark-600: var(--primary3);
 
-    /* @-menu */
+    // @-menu
     --primary-dark-630: var(--primary2);
 
-    /* radio button */
+    // radio button
     --brand-experiment-500: var(--custom-color1);
 
-    /* disconnected */
+    // disconnected
     --status-yellow-500: var(--warning);
 
-    /* channel # background */
+    // channel # background
     --background-accent: var(--primary1);
 
-    /* @-menu */
+    // @-menu
     &.autocomplete_df266d {
         background-color: var(--primary2);
     }

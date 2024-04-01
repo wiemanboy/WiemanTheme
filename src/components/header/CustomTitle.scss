@@ -1,5 +1,6 @@
+/* CustomTitle */
 .typeWindows_e41dab {
-    /* title */
+    // title
     &::after {
         font-weight: bold;
         font-family: inherit;
@@ -9,7 +10,7 @@
         content: "WiemanTheme";
     }
 
-    /* top icon */
+    // top icon
     &::before {
         transform: scale(0.2);
         position: absolute;
@@ -19,7 +20,7 @@
     }
 }
 
-/* remove discord logo */
+// remove discord logo
 .wordmarkWindows_ffbc5e {
     display: none;
 }

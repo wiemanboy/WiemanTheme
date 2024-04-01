@@ -1,8 +1,9 @@
+/* MembersMenu */
 .membersWrap__5ca6b {
     width: 70px;
     min-width: 70px;
 
-    /* extend member menu in DM*/
+    // extend member menu in DM
     .members__573eb {
         width: 70px;
         height: calc(100vh - 48px - 22px);
@@ -14,13 +15,13 @@
         }
     }
 
-    /* extend member menu in server */
+    // extend member menu in server
     &.hiddenMembers__0524b .members__573eb:hover {
         transform: translateX(-80px);
     }
 }
 
-/* animations for members menu*/
+// animations for members menu
 @keyframes drop-down {
     0% {
         transform: translateY(-1px);
@@ -39,14 +40,14 @@
     }
 }
 
-/* hide activity/username/bottag */
+// hide activity/username/bottag
 .activity_bafb94,
 .username__4a6f7,
 .botTag_a52f38 {
     display: none;
 }
 
-/* hide and style role text */
+// hide and style role text
 .membersGroup_cad095 {
     padding-top: 0;
     padding-left: 8px;
@@ -59,7 +60,7 @@
     border-top-style: solid;
 }
 
-/* animate components */
+// animate components
 .container__43554:hover,
 .membersWrap__5ca6b:hover {
     .membersGroup_cad095 {
@@ -85,7 +86,7 @@
     }
 }
 
-/* move owner icon */
+// move owner icon
 .ownerIcon_bd8e7d {
     position: absolute;
     transform: translateX(-21px) translateY(7px) rotate(5deg) scale(0.9);
