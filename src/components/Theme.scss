@@ -1,9 +1,15 @@
 .theme-dark {
-    --rgb-custom-color1: 128, 0, 128;
-    --rgb-custom-color2: 192 0 192;
+    $custom-color1: #c000c0;
+    $custom-color2: #800080;
 
-    --custom-color1: #c000c0;
-    --custom-color2: #800080;
+    /* prettier-ignore */
+    --rgb-custom-color1: #{red($custom-color1)}, #{green($custom-color1)}, #{blue($custom-color1)};
+    /* prettier-ignore */
+    --rgb-custom-color2: #{red($custom-color2)}, #{green($custom-color2)}, #{blue($custom-color2)};
+
+    --custom-color1: #{$custom-color1};
+    --custom-color2: #{$custom-color2};
+
     --custom-color1-gradient: linear-gradient(
         90deg,
         var(--custom-color2) 0%,
