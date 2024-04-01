@@ -1,5 +1,5 @@
 %shared-color {
-    background-color: var(--custom-color1);
+    background-color: var(--custom-color2);
     filter: brightness(0.8);
     &.bd-button-content {
     }
@@ -9,7 +9,8 @@
     @extend %shared-color;
 }
 
-.bd-button {
+.bd-button,
+button {
     &.bd-button-icon svg,
     .bd-icon {
         fill: white;
@@ -28,12 +29,12 @@
         }
 
         &:hover {
-            background-color: var(--custom-color1);
+            background-color: var(--custom-color2);
             filter: brightness(1);
         }
 
         &:active {
-            background-color: var(--custom-color1);
+            background-color: var(--custom-color2);
             filter: brightness(1.5);
         }
 
@@ -44,5 +45,5 @@
 }
 
 .bd-addon-views .bd-view-button.selected {
-    background: var(--custom-color1);
+    background: var(--custom-color2);
 }

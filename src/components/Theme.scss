@@ -1,6 +1,6 @@
 .theme-dark {
     $custom-color1: #c000c0;
-    $custom-color2: #800080;
+    $custom-color2: #6500a3;
 
     /* prettier-ignore */
     --rgb-custom-color1: #{red($custom-color1)}, #{green($custom-color1)}, #{blue($custom-color1)};
@@ -36,7 +36,7 @@
     --secondary4: #707070;
 
     --warning: #ff7722;
-    --danger: #f00000;
+    --danger: #de003e;
     --WIP: red;
 
     /* color changes*/
@@ -59,10 +59,10 @@
 
     /* mention dms */
     --mention-foreground: var(--secondary3);
-    --mention-background: rgba(var(--rgb-custom-color1), 0.7);
-    --info-warning-foreground: var(--custom-color1);
-    --background-mentioned: rgba(var(--rgb-custom-color1), 0.4);
-    --background-mentioned-hover: rgba(var(--rgb-custom-color1), 0.5);
+    --mention-background: rgba(var(--rgb-custom-color2), 1);
+    --info-warning-foreground: var(--custom-color2);
+    --background-mentioned: rgba(var(--rgb-custom-color2), 0.4);
+    --background-mentioned-hover: rgba(var(--rgb-custom-color2), 0.5);
 
     /* icons */
     --interactive-normal: var(--secondary1);
@@ -88,7 +88,7 @@
     --text-link: var(--custom-color1);
 
     /* buttons */
-    --brand-experiment-560: var(--custom-color1);
+    --brand-experiment-560: var(--custom-color2);
     --brand-experiment: var(--custom-color2);
     --brand-experiment-600: var(--custom-color2-gradient);
 
