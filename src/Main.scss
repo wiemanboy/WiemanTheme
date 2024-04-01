@@ -8,12 +8,19 @@
 
 @import "assets/Icons";
 @import "components/Theme";
+
+/* Header content */
 @import "components/header/CustomTitle";
+@import "components/header/Notice";
+
+/* Main content */
 @import "components/main/DmMenu";
 @import "components/main/MembersMenu";
-@import "components/settings/BdButton";
 @import "components/main/Button";
 @import "components/main/SpotifyInvite";
 @import "components/main/profile/Banner";
 @import "components/main/profile/Popout";
+
+/* Settings content */
+@import "components/settings/BdButton";
 @import "components/settings/MicTestBar";

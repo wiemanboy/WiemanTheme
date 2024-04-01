@@ -1,0 +1,22 @@
+.notice__5fd4c {
+    border-radius: 5px;
+    padding-right: 25px;
+    padding-left: 10px;
+    font-size: 12px;
+
+    display: flex;
+    flex-shrink: 1;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+
+    .closeButton__90904 {
+        width: 18px;
+        margin-right: 7px;
+    }
+
+    button {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
