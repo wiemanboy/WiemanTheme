@@ -1,20 +1,45 @@
-.bd-notice,
-.bd-button {
-    background-color: var(--custom-color2);
+%shared-color {
+    background-color: var(--custom-color1);
+    filter: brightness(0.8);
+    &.bd-button-content {
+    }
+}
+
+.bd-notice {
+    @extend %shared-color;
 }
 
 .bd-button {
-    &.bd-button-danger {
-        background: var(--danger);
+    &.bd-button-icon svg,
+    .bd-icon {
+        fill: white;
     }
 
-    &:hover {
-        background-color: var(--custom-color1);
-    }
+    &,
+    &.bd-button-filled {
+        @extend %shared-color;
 
-    &:active {
-        background-color: var(--custom-color1);
-        filter: brightness(1.5);
+        &.bd-button-color-red {
+            background: var(--danger);
+            &:hover,
+            &:active {
+                background-color: var(--danger);
+            }
+        }
+
+        &:hover {
+            background-color: var(--custom-color1);
+            filter: brightness(1);
+        }
+
+        &:active {
+            background-color: var(--custom-color1);
+            filter: brightness(1.5);
+        }
+
+        &.bd-button-disabled {
+            background-color: var(--custom-color2);
+        }
     }
 }
 
