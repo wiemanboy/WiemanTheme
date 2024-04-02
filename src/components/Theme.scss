@@ -11,19 +11,6 @@
     // prettier-ignore
     --rgb-custom-color2: #{red($custom-color2)}, #{green($custom-color2)}, #{blue($custom-color2)};
 
-    --custom-color1-gradient: linear-gradient(
-        90deg,
-        var(--custom-color2) 0%,
-        var(--custom-color1) 80%
-    );
-    --custom-color2-gradient: linear-gradient(
-        90deg,
-        var(--custom-color2) 0%,
-        var(--custom-color1) 20%,
-        var(--custom-color1) 80%,
-        var(--custom-color2) 100%
-    );
-
     --primary1: #090909;
     --primary2: #0c0c0c;
     --primary3: #131313;
@@ -63,7 +50,7 @@
     --background-secondary-alt: var(--background-tertiary);
 
     // select
-    --background-modifier-selected: var(--primary3);
+    --background-modifier-selected: var(--primary2);
     --background-modifier-hover: var(--primary2);
 
     // input
@@ -80,7 +67,8 @@
     // buttons
     --brand-experiment-560: var(--custom-color2);
     --brand-experiment: var(--custom-color2);
-    --brand-experiment-600: var(--custom-color2-gradient);
+    --brand-experiment-600: var(--custom-color2);
+    --brand-experiment-500: var(--custom-color1);
 
     // gif select
     --primary-dark-500: var(--primary3);
@@ -98,19 +86,11 @@
     --primary-dark-600: var(--background-primary);
 
     // @-menu
-    --primary-dark-630: var(--background-secondary);
-
-    // radio button
-    --brand-experiment-500: var(--custom-color1);
+    --primary-630: var(--background-secondary);
 
     // disconnected
     --status-yellow-500: var(--warning);
 
     // channel # background
     --background-accent: var(--background-tertiary);
-
-    // @-menu
-    &.autocomplete_df266d {
-        background-color: var(--background-secondary);
-    }
 }

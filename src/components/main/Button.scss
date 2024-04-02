@@ -2,3 +2,15 @@
 .interactive_a868bc:active {
     background: var(--background-primary);
 }
+
+button {
+    filter: brightness(1);
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+
+    &:active {
+        filter: brightness(1.5);
+    }
+}
