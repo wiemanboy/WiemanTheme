@@ -3,13 +3,13 @@
     $custom-color1: #c000c0;
     $custom-color2: #6500a3;
 
+    --custom-color1: #{$custom-color1};
+    --custom-color2: #{$custom-color2};
+
     // prettier-ignore
     --rgb-custom-color1: #{red($custom-color1)}, #{green($custom-color1)}, #{blue($custom-color1)};
     // prettier-ignore
     --rgb-custom-color2: #{red($custom-color2)}, #{green($custom-color2)}, #{blue($custom-color2)};
-
-    --custom-color1: #{$custom-color1};
-    --custom-color2: #{$custom-color2};
 
     --custom-color1-gradient: linear-gradient(
         90deg,
@@ -24,66 +24,55 @@
         var(--custom-color2) 100%
     );
 
-    --primary1: #000000;
-    --primary2: #0f0f0f;
-    --primary3: #161616;
-    --primary4: #0c0c0c;
-    --primary5: #131313;
-    --primary6: #090909;
+    --primary1: #090909;
+    --primary2: #0c0c0c;
+    --primary3: #131313;
 
-    --secondary1: #808080;
-    --secondary2: #505050;
-    --secondary3: #d0d0d0;
-    --secondary4: #707070;
+    --background-primary: #161616;
+    --background-secondary: #0f0f0f;
+    --background-tertiary: #000000;
+    --background-message-hover: var(--primary3);
+
+    --icon-color: #808080;
+    --icon-color-active: #a0a0a0;
+
+    --text-normal: #d0d0d0;
+    --text-muted: #707070;
+    --text-disabled: #404040;
 
     --warning: #ff7722;
     --danger: #de003e;
-    --WIP: red;
-
-    // default discord color changes
-
-    // servers background
-    --background-tertiary: var(--primary1);
-
-    // message background
-    --background-primary: var(--primary3);
-    --background-message-hover: var(--primary5);
-
-    // dms background
-    --background-secondary: var(--primary2);
 
     // dms text color
-    --channels-default: var(--secondary1);
-    --interactive-muted: var(--secondary2);
-    --text-normal: var(--secondary3);
-    --text-muted: var(--secondary4);
+    --channels-default: var(--text-muted);
+    --interactive-muted: var(--text-disabled);
 
     // mention dms
-    --mention-foreground: var(--secondary3);
+    --mention-foreground: var(--text-normal);
     --mention-background: rgba(var(--rgb-custom-color2), 1);
     --info-warning-foreground: var(--custom-color2);
     --background-mentioned: rgba(var(--rgb-custom-color2), 0.4);
     --background-mentioned-hover: rgba(var(--rgb-custom-color2), 0.5);
 
     // icons
-    --interactive-normal: var(--secondary1);
-    --interactive-hover: var(--secondary3);
-    --interactive-active: var(--secondary3);
+    --interactive-normal: var(--icon-color);
+    --interactive-hover: var(--icon-color-active);
+    --interactive-active: var(--icon-color-active);
 
     // profile background
-    --background-secondary-alt: var(--primary1);
+    --background-secondary-alt: var(--background-tertiary);
 
     // select
-    --background-modifier-selected: var(--primary5);
-    --background-modifier-hover: var(--primary4);
+    --background-modifier-selected: var(--primary3);
+    --background-modifier-hover: var(--primary2);
 
     // input
-    --channeltextarea-background: var(--primary4);
-    --input-background: var(--primary4);
+    --channeltextarea-background: var(--primary2);
+    --input-background: var(--primary2);
 
     // scrollbar
-    --scrollbar-auto-track: var(--primary2);
-    --scrollbar-auto-thumb: var(--primary1);
+    --scrollbar-auto-track: var(--background-secondary);
+    --scrollbar-auto-thumb: var(--background-tertiary);
 
     // link
     --text-link: var(--custom-color1);
@@ -94,22 +83,22 @@
     --brand-experiment-600: var(--custom-color2-gradient);
 
     // gif select
-    --primary-dark-500: var(--primary5);
+    --primary-dark-500: var(--primary3);
 
     // chat
-    --background-floating: var(--primary6);
+    --background-floating: var(--primary1);
 
     // link popup
-    --modal-background: var(--primary5);
-    --modal-footer-background: var(--primary6);
-    --button-secondary-background: var(--primary2);
-    --button-secondary-background-hover: var(--primary3);
+    --modal-background: var(--primary3);
+    --modal-footer-background: var(--primary1);
+    --button-secondary-background: var(--background-secondary);
+    --button-secondary-background-hover: var(--background-primary);
 
     // audio player
-    --primary-dark-600: var(--primary3);
+    --primary-dark-600: var(--background-primary);
 
     // @-menu
-    --primary-dark-630: var(--primary2);
+    --primary-dark-630: var(--background-secondary);
 
     // radio button
     --brand-experiment-500: var(--custom-color1);
@@ -118,10 +107,10 @@
     --status-yellow-500: var(--warning);
 
     // channel # background
-    --background-accent: var(--primary1);
+    --background-accent: var(--background-tertiary);
 
     // @-menu
     &.autocomplete_df266d {
-        background-color: var(--primary2);
+        background-color: var(--background-secondary);
     }
 }

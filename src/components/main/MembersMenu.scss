@@ -54,8 +54,8 @@
     margin-left: 8px;
     margin-top: 16px;
     height: 16px;
-    color: var(--primary2);
-    border-top: var(--secondary2);
+    color: var(--background-secondary);
+    border-top: var(--icon-color-active);
     border-top-width: 1px;
     border-top-style: solid;
 }
@@ -64,7 +64,7 @@
 .container__43554:hover,
 .membersWrap__5ca6b:hover {
     .membersGroup_cad095 {
-        color: var(--secondary3);
+        color: var(--text-normal);
     }
 
     .username__4a6f7 {
