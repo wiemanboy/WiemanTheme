@@ -27,8 +27,9 @@
     --text-muted: #707070;
     --text-disabled: #404040;
 
-    --warning: #ff7722;
     --danger: #de003e;
+    --warning: #ff7722;
+    --correct: #23a55a;
 
     // dms text color
     --channels-default: var(--text-muted);
@@ -50,8 +51,8 @@
     --background-secondary-alt: var(--background-tertiary);
 
     // select
-    --background-modifier-selected: var(--primary2);
-    --background-modifier-hover: var(--primary2);
+    --background-modifier-selected: var(--primary1);
+    --background-modifier-hover: var(--primary1);
 
     // input
     --channeltextarea-background: var(--primary2);
