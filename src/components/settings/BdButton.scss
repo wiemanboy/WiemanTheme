@@ -1,0 +1,35 @@
+/* BdButton */
+%shared-color {
+    background-color: var(--custom-color2);
+}
+
+.bd-notice,
+.bd-addon-views .bd-view-button.selected {
+    @extend %shared-color;
+}
+
+.bd-button {
+    &.bd-button-icon svg,
+    .bd-icon {
+        fill: var(--icon-color);
+    }
+
+    &.bd-button-filled {
+        @extend %shared-color;
+
+        &.bd-button-color-red {
+            background: var(--danger);
+
+            &:hover,
+            &:active {
+                background-color: var(--danger);
+            }
+        }
+
+        &:hover,
+        &:active,
+        &.bd-button-disabled {
+            @extend %shared-color;
+        }
+    }
+}

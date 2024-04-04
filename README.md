@@ -6,11 +6,11 @@ Initially made for personal use, I decided to make it available to the public fo
 
 ## Notable Features
 
-- A custom color scheme that is easy on the eyes, featuring a nice purple color.
-- Some readjustment of UI elements to eliminate clutter and make the UI more compact.
-  ![DmIcons](.github/assets/DmIcons.png)
-- A collapsible server list to make better use of space.  
-  ![ExtendedMenu.gif](.github/assets/ExtendedMenu.gif)
+-   A custom color scheme that is easy on the eyes, featuring a nice purple color.
+-   Some readjustment of UI elements to eliminate clutter and make the UI more compact.  
+    ![DmIcons](.github/assets/DmIcons.png)
+-   A collapsible server list to make better use of space.  
+    ![ExtendedMenu.gif](.github/assets/ExtendedMenu.gif)
 
 ## Installation
 
@@ -21,11 +21,17 @@ If you are interested in editing or forking the theme, you can clone
 the [master branch](https://github.com/wiemanboy/WiemanTheme/tree/master) and compile the stylesheet yourself by:
 
 Installing the sass dependency:
+
 ```bash
 npm install
 ```
 
 And compiling the stylesheet:
+
 ```bash
 npm run compile
 ```
+
+## Bugs and Suggestions
+
+If you find any bugs or have any suggestions, feel free to open an issue or pull request.
