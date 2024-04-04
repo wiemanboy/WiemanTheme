@@ -31,3 +31,7 @@ And compiling the stylesheet:
 ```bash
 npm run compile
 ```
+
+## Bugs and Suggestions
+
+If you find any bugs or have any suggestions, feel free to open an issue or pull request.
