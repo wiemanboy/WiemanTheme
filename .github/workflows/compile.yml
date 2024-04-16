@@ -1,4 +1,4 @@
-name: Compile source code
+name: Compile source code and release
 env:
     OUTPUT_BRANCH: release
     OUTPUT: wiemantheme.theme.css
@@ -9,7 +9,7 @@ on:
             - master
 
 jobs:
-    build:
+    build-and-release:
         runs-on: ubuntu-latest
 
         steps:
@@ -32,11 +32,22 @@ jobs:
                   rm -rf node_modules
                   rm -rf src
                   rm -rf .gitignore
+                  rm -rf .prettierrc
                   rm -rf package.json
                   rm -rf package-lock.json
                   rm -rf README.md
                   rm -rf $OUTPUT.map
 
+
                   git add .
                   git commit -m "Compile SCSS"
                   git push -f origin $OUTPUT_BRANCH
+
+            - name: Create release
+              uses: marvinpinto/action-automatic-releases@latest
+              with:
+                  repo_token: "${{ secrets.TOKEN }}"
+                  automatic_release_tag: ${{ vars.NEXT_VERSION }}
+                  prerelease: false
+                  title: "WiemanTheme ${{ vars.NEXT_VERSION }}"
+                  files: ${{ env.OUTPUT }}
