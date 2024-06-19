@@ -1,6 +1,6 @@
 {
     "name": "wiemantheme",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "scripts": {
         "compile": "sass src/Main.scss wiemantheme.theme.css",
         "fix": "npx prettier . --write"

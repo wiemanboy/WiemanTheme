@@ -1,14 +1,14 @@
 /* DmMenu */
-.content__690c5 {
+.content_eed6a8 {
     li:nth-child(3),
     li:nth-child(4) {
-        .linkButton__9da2c {
+        .linkButton_c91bad {
             display: none;
         }
     }
 
     li:nth-child(2) {
-        .linkButton__9da2c {
+        .linkButton_c91bad {
             position: fixed;
             translate: -10px -53px;
             background: none;
@@ -17,7 +17,7 @@
 }
 
 // remove dms text
-.privateChannelsHeaderContainer_b22dc9 {
+.privateChannelsHeaderContainer_c47fa9 {
     padding: 0;
     height: 0;
 }
@@ -27,17 +27,17 @@
 }
 
 // move + button
-.privateChannelRecipientsInviteButtonIcon__459c2 {
+.privateChannelRecipientsInviteButtonIcon_c47fa9 {
     position: fixed;
     translate: 104px -27px;
     padding: 5px;
 }
 
 // move search bar to make space for above buttons
-.searchBar__621ec {
+.searchBar_f0963d {
     margin-left: 30px;
     margin-right: 15px;
-    .searchBarComponent__8f95f {
+    .searchBarComponent_f0963d {
         font-size: 13.7px;
     }
 }

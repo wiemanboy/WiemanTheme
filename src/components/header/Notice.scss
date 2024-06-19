@@ -1,4 +1,4 @@
-/* Notice */
+/* Notice */ //TODO: Figure out updated classes
 .notice__5fd4c {
     border-radius: 5px;
     padding-right: 25px;
@@ -16,8 +16,16 @@
         margin-right: 7px;
     }
 
-    button {
-        margin-left: 5px;
+    .textLink_a20eaa {
         margin-right: 5px;
+        padding-left: 0;
+    }
+
+    button {
+        margin: 0 5px;
+    }
+
+    img {
+        margin: auto 15px auto auto;
     }
 }
