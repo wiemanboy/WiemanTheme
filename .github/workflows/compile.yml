@@ -32,7 +32,7 @@ jobs:
                   rm -rf node_modules
                   rm -rf src
                   rm -rf .gitignore
-                  rm -rf .prettierrc
+                  rm -rf .prettierrc.json
                   rm -rf package.json
                   rm -rf package-lock.json
                   rm -rf README.md
