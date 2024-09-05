@@ -68,11 +68,14 @@
     // link
     --text-link: var(--custom-color1);
 
-    // buttons
-    --brand-experiment-560: var(--custom-color2);
-    --brand-experiment: var(--custom-color2);
-    --brand-experiment-600: var(--custom-color2);
-    --brand-experiment-500: var(--custom-color1);
+    // Buttons
+    --brand-560: var(--custom-color2);
+    --brand: var(--custom-color2);
+    --brand-600: var(--custom-color2);
+    --brand-500: var(--custom-color2);
+
+    // Slider
+    --brand-360: var(--custom-color1);
 
     // gif select
     --primary-dark-500: var(--primary3);
@@ -100,9 +103,6 @@
 
     // Checkbox
     --brand-experiment-400: var(--custom-color1);
-
-    // Discord messages icon
-    --brand-500: var(--custom-color2);
 
     // Discord message bubble
     --primary-600: var(--background-tertiary);
