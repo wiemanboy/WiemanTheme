@@ -1,60 +1,55 @@
 name: Compile source code and release
 env:
-    OUTPUT_BRANCH: release
-    OUTPUT: wiemantheme.theme.css
+  OUTPUT_BRANCH: release
+  OUTPUT: wiemantheme.theme.css
 
 on:
-    push:
-        branches:
-            - master
+  push:
+    branches:
+      - master
 
 jobs:
-    build-and-release:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout source code
-              uses: actions/checkout@v4
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
 
-            - name: Install dependencies
-              run: npm install
+      - name: Install dependencies
+        run: npm install
 
-            - name: Compile SCSS
-              run: npm run compile -- name="${{ github.event.repository.name }}" author="${{ github.repository_owner }}" description="${{ vars.DESCRIPTION }}" source="${{ github.repositoryUrl }}"
+      - name: Compile SCSS
+        run: npm run compile -- name="${{ github.event.repository.name }}" author="${{ github.repository_owner }}" description="${{ vars.DESCRIPTION }}" source="${{ github.repositoryUrl }}"
 
-            - name: Get version from package.json
-              id: get_version
-              run: |
-                  VERSION=$(jq -r '.version' package.json)
-                  echo "Version: $VERSION"
-                  echo "::set-output name=result::$VERSION"
+  release:
+    runs-on: ubuntu-latest
 
-            - name: Commit changes
-              run: |
-                  git config --global user.name 'wiemanboy'
-                  git config --global user.email 'wiemanboy@gmail.com'
-                  git checkout -b $OUTPUT_BRANCH
+    steps:
+      - name: Get version from package.json
+        id: get_version
+        run: |
+          VERSION=$(jq -r '.version' package.json)
+          echo "Version: $VERSION"
+          echo "::set-output name=result::$VERSION"
 
-                  rm -rf .github
-                  rm -rf node_modules
-                  rm -rf src
-                  rm -rf .gitignore
-                  rm -rf .prettierrc.json
-                  rm -rf package.json
-                  rm -rf package-lock.json
-                  rm -rf README.md
-                  rm -rf $OUTPUT.map
+      - name: Commit changes
+        run: |
+          git config --global user.name ${{ github.triggering_actor }}.
+          git config --global user.email ${{ github.triggering_actor }}@gmail.com
+          git checkout -b $OUTPUT_BRANCH
+          
+          find . -type f ! -name $OUTPUT -delete
+          
+          git add .
+          git commit -m "Compile ${{ github.event.repository.name }} SCSS v${{ steps.get_version.outputs.result }} build #${{ github.run_number }}"
+          git push -f origin $OUTPUT_BRANCH
 
-
-                  git add .
-                  git commit -m "Compile SCSS"
-                  git push -f origin $OUTPUT_BRANCH
-
-            - name: Create release
-              uses: marvinpinto/action-automatic-releases@latest
-              with:
-                  repo_token: "${{ secrets.TOKEN }}"
-                  automatic_release_tag: ${{ steps.get_version.outputs.result }}
-                  prerelease: false
-                  title: "${{ github.event.repository.name }} v${{ steps.get_version.outputs.result }}"
-                  files: ${{ env.OUTPUT }}
+      - name: Create release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.TOKEN }}"
+          automatic_release_tag: ${{ steps.get_version.outputs.result }}
+          prerelease: false
+          title: "${{ github.event.repository.name }} v${{ steps.get_version.outputs.result }}"
+          files: ${{ env.OUTPUT }}

@@ -14,22 +14,36 @@ Initially made for personal use, I decided to make it available to the public fo
 
 ## Installation
 
-If you're interested you can [download the latest release](https://github.com/wiemanboy/WiemanTheme/releases/).
+If you're interested, you can [download the latest release](https://github.com/wiemanboy/WiemanTheme/releases/).
 Alternatively, you can clone this file from the [release branch](https://github.com/wiemanboy/WiemanTheme/tree/release).
 
-If you are interested in editing or forking the theme, you can clone
-the [master branch](https://github.com/wiemanboy/WiemanTheme/tree/master) and compile the stylesheet yourself by:
+```bash
+git clone --branch release --single-branch https://github.com/wiemanboy/WiemanTheme.git
+```
 
-Installing the sass dependency:
+If you are interested in editing or forking the theme, you can clone
+the [master branch](https://github.com/wiemanboy/WiemanTheme/tree/master) and compile the stylesheet yourself.
+
+## Compiling the Stylesheet
+
+To compile the stylesheet, you will need to have [Node.js](https://nodejs.org/en/) installed.
+
+First, install the dependencies:
 
 ```bash
 npm install
 ```
 
-And compiling the stylesheet:
+Then the scss files can be compiled using the following command:
 
 ```bash
 npm run compile
+```
+
+The info for the theme can be changed in the compile command:
+
+```bash
+npm run compile -- name="CustomName" author="you" description="Custom description" source="github link"
 ```
 
 ## Bugs and Suggestions
