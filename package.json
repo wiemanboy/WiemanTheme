@@ -1,8 +1,8 @@
 {
     "name": "wiemantheme",
-    "version": "2.1.6",
+    "version": "2.1.7",
     "scripts": {
-        "compile": "sass src/Main.scss wiemantheme.theme.css && node updateInfo.js -- name=\"WiemanTheme\" author=\"Local\" description=\"Local build\" source=\"Locally build\"",
+        "compile": "sass src/Main.scss wiemantheme.theme.css && node encodeImages.js && node updateInfo.js -- name=\"WiemanTheme\" author=\"Local\" description=\"Local build\" source=\"Locally build\"",
         "fix": "npx prettier . --write"
     },
     "devDependencies": {
