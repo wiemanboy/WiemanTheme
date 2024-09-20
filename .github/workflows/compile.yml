@@ -9,7 +9,7 @@ on:
       - master
 
 jobs:
-  build:
+  build-release:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,18 +20,14 @@ jobs:
         run: npm install
 
       - name: Compile SCSS
-        run: npm run compile -- name="${{ github.event.repository.name }}" author="${{ github.repository_owner }}" description="${{ vars.DESCRIPTION }}" source="${{ github.repositoryUrl }}"
+        run: npm run compile -- name="${{ github.event.repository.name }}" author="${{ github.repository_owner }}" description="${{ vars.DESCRIPTION }}" source="${{ github.event.repository.html_url }}"
 
-  release:
-    runs-on: ubuntu-latest
-
-    steps:
       - name: Get version from package.json
         id: get_version
         run: |
           VERSION=$(jq -r '.version' package.json)
           echo "Version: $VERSION"
-          echo "::set-output name=result::$VERSION"
+          echo "result=$VERSION" >> $GITHUB_ENV
 
       - name: Commit changes
         run: |
