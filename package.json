@@ -1,6 +1,6 @@
 {
     "name": "wiemantheme",
-    "version": "2.1.5",
+    "version": "2.1.6",
     "scripts": {
         "compile": "sass src/Main.scss wiemantheme.theme.css && node updateInfo.js -- name=\"WiemanTheme\" author=\"Local\" description=\"Local build\" source=\"Locally build\"",
         "fix": "npx prettier . --write"
