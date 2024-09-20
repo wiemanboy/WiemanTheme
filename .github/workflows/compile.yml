@@ -50,9 +50,6 @@ jobs:
                   git commit -m "Compile SCSS"
                   git push -f origin $OUTPUT_BRANCH
 
-            - name: Install jq
-              run: sudo apt-get install jq
-
             - name: Create release
               uses: marvinpinto/action-automatic-releases@latest
               with:
