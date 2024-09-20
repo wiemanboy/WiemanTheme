@@ -1,11 +1,12 @@
 {
     "name": "wiemantheme",
-    "version": "2.1.4",
+    "version": "2.1.5",
     "scripts": {
-        "compile": "sass src/Main.scss wiemantheme.theme.css",
+        "compile": "sass src/Main.scss wiemantheme.theme.css && node updateInfo.js -- name=\"WiemanTheme\" author=\"Local\" description=\"Local build\" source=\"Locally build\"",
         "fix": "npx prettier . --write"
     },
     "devDependencies": {
+        "minimist": "^1.2.8",
         "prettier": "3.2.5",
         "sass": "^1.43.4"
     }
