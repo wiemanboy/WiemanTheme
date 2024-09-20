@@ -35,7 +35,7 @@ jobs:
           git config --global user.email ${{ github.triggering_actor }}@gmail.com
           git checkout -b $OUTPUT_BRANCH
           
-          find . -type f ! -name $OUTPUT -delete
+          find . -type f ! -name "$OUTPUT" -not -path './.git/*' -delete
           
           git init
           git add .
