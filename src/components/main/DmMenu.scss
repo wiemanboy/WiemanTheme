@@ -7,11 +7,18 @@
         }
     }
 
-    li:nth-child(2) {
+    li:nth-child(1) {
         .linkButton_c91bad {
             position: fixed;
-            translate: -10px -53px;
+            translate: -5px -53px;
             background: none;
+            z-index: 9999;
+            width: 42px;
+            padding: 0;
+        }
+
+        .name_ec8679 {
+            display: none;
         }
     }
 }
@@ -29,15 +36,15 @@
 // move + button
 .privateChannelRecipientsInviteButtonIcon_c47fa9 {
     position: fixed;
-    translate: 104px -27px;
+    translate: 100px -28px;
     padding: 5px;
+    z-index: 99999;
 }
 
 // move search bar to make space for above buttons
 .searchBar_f0963d {
-    margin-left: 30px;
-    margin-right: 15px;
     .searchBarComponent_f0963d {
-        font-size: 13.7px;
+        font-size: 12px;
+        text-align: center;
     }
 }
