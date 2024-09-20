@@ -35,7 +35,7 @@ jobs:
           git config --global user.email ${{ github.triggering_actor }}@gmail.com
           git checkout -b $OUTPUT_BRANCH
           
-          find . -type f ! -name $OUTPUT -delete
+          find . -type f ! -name $OUTPUT ! -name .git -delete
           
           git add .
           git commit -m "Compile ${{ github.event.repository.name }} SCSS v${{ steps.get_version.outputs.result }} build #${{ github.run_number }}"
