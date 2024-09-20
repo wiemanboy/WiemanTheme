@@ -27,7 +27,7 @@ jobs:
         run: |
           VERSION=$(jq -r '.version' package.json)
           echo "Version: $VERSION"
-          echo "result=$VERSION" >> $GITHUB_ENV
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Commit changes
         run: |
