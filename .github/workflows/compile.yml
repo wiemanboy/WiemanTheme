@@ -33,14 +33,14 @@ jobs:
         run: |
           git config --global user.name ${{ github.triggering_actor }}.
           git config --global user.email ${{ github.triggering_actor }}@gmail.com
-          git checkout -b $OUTPUT_BRANCH
           
           find . -type f ! -name "$OUTPUT" -not -path './.git/*' -delete
+          rm -rf node_modules
           
           git init
           git add .
           git commit -m "Compile ${{ github.event.repository.name }} SCSS v${{ env.VERSION }} build #${{ github.run_number }}"
-          git push -f origin $OUTPUT_BRANCH
+          git push -f --set-upstream origin $OUTPUT_BRANCH
 
       - name: Create release
         uses: marvinpinto/action-automatic-releases@latest
