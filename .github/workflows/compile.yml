@@ -20,7 +20,7 @@ jobs:
               run: npm install
 
             - name: Compile SCSS
-              run: npm run compile
+              run: npm run compile -- name="${{ github.event.repository.name }}" author="${{ github.repository_owner }}" description="${{ vars.DESCRIPTION }}" source="${{ github.repositoryUrl }}"
 
             - name: Commit changes
               run: |
@@ -43,11 +43,21 @@ jobs:
                   git commit -m "Compile SCSS"
                   git push -f origin $OUTPUT_BRANCH
 
+            - name: Install jq
+              run: sudo apt-get install jq
+
+            - name: Get version from package.json
+              id: get_version
+              run: |
+                  VERSION=$(jq -r '.version' package.json)
+                  echo "Version: $VERSION"
+                  echo "::set-output name=result::$VERSION"
+
             - name: Create release
               uses: marvinpinto/action-automatic-releases@latest
               with:
                   repo_token: "${{ secrets.TOKEN }}"
-                  automatic_release_tag: ${{ vars.NEXT_VERSION }}
+                  automatic_release_tag: ${{ steps.get_version.outputs.result }}
                   prerelease: false
-                  title: "WiemanTheme ${{ vars.NEXT_VERSION }}"
+                  title: "${{ github.event.repository.name }} v${{ steps.get_version.outputs.result }}"
                   files: ${{ env.OUTPUT }}
