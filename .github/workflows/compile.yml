@@ -14,13 +14,20 @@ jobs:
 
         steps:
             - name: Checkout source code
-              uses: actions/checkout@v2
+              uses: actions/checkout@v4
 
             - name: Install dependencies
               run: npm install
 
             - name: Compile SCSS
               run: npm run compile -- name="${{ github.event.repository.name }}" author="${{ github.repository_owner }}" description="${{ vars.DESCRIPTION }}" source="${{ github.repositoryUrl }}"
+
+            - name: Get version from package.json
+              id: get_version
+              run: |
+                  VERSION=$(jq -r '.version' package.json)
+                  echo "Version: $VERSION"
+                  echo "::set-output name=result::$VERSION"
 
             - name: Commit changes
               run: |
@@ -45,13 +52,6 @@ jobs:
 
             - name: Install jq
               run: sudo apt-get install jq
-
-            - name: Get version from package.json
-              id: get_version
-              run: |
-                  VERSION=$(jq -r '.version' package.json)
-                  echo "Version: $VERSION"
-                  echo "::set-output name=result::$VERSION"
 
             - name: Create release
               uses: marvinpinto/action-automatic-releases@latest
