@@ -39,14 +39,14 @@ jobs:
           
           git init
           git add .
-          git commit -m "Compile ${{ github.event.repository.name }} SCSS v${{ steps.get_version.outputs.result }} build #${{ github.run_number }}"
+          git commit -m "Compile ${{ github.event.repository.name }} SCSS v${{ env.VERSION }} build #${{ github.run_number }}"
           git push -f origin $OUTPUT_BRANCH
 
       - name: Create release
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.TOKEN }}"
-          automatic_release_tag: ${{ steps.get_version.outputs.result }}
+          automatic_release_tag: ${{ env.VERSION }}
           prerelease: false
-          title: "${{ github.event.repository.name }} v${{ steps.get_version.outputs.result }}"
+          title: "${{ github.event.repository.name }} v${{ env.VERSION }}"
           files: ${{ env.OUTPUT }}
