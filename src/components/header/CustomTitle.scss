@@ -1,5 +1,7 @@
 /* CustomTitle */
-.typeWindows_a934d8 {
+@import "../../Common";
+
+@include class("typeWindows") {
     // title
     &::after {
         font-weight: bold;
@@ -21,6 +23,6 @@
 }
 
 // remove discord logo
-.wordmarkWindows_a934d8 {
+@include class("wordmarkWindows") {
     display: none;
 }

@@ -1,4 +1,6 @@
 /* Popout */
+@import "../../../Common";
+
 // animations for profile popout
 @keyframes slide-out {
     0% {
@@ -18,19 +20,12 @@
 }
 
 // animate popout
-.userPopoutOuter_c69a7b {
+@include class("userPopoutOuter") {
     animation: slide-out 0.1s ease-in-out forwards;
 }
 
 // animate popout info
-.userPopoutOverlayBackground_c69a7b {
+@include class("userPopoutOverlayBackground") {
     height: 0;
     animation: slide-down 0.15s ease-in-out 0.1s forwards;
-}
-
-// animate popout badges
-.profileBadges_f89da9 {
-    transform-origin: top;
-    transform: rotateX(-90deg);
-    animation: drop-down 0.15s ease-in-out 0.1s forwards;
 }

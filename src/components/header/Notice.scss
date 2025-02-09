@@ -1,5 +1,7 @@
 /* Notice */ //TODO: Figure out updated classes
-.notice__5fd4c {
+@import "../../Common";
+
+@include class("notice") {
     border-radius: 5px;
     padding-right: 25px;
     padding-left: 10px;
@@ -11,12 +13,12 @@
     justify-self: center;
     align-self: center;
 
-    .closeButton__90904 {
+    @include class("closeButton") {
         width: 18px;
         margin-right: 7px;
     }
 
-    .textLink_a20eaa {
+    @include class("textLink") {
         margin-right: 5px;
         padding-left: 0;
     }
