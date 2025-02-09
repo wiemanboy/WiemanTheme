@@ -1,10 +1,12 @@
 /* MembersMenu */
-.membersWrap_cbd271 {
+@import "../../Common";
+
+@include class("membersWrap") {
     width: 70px;
     min-width: 70px;
 
     // extend member menu in DM
-    .members_cbd271 {
+    .members_c8ffbb {
         width: 70px;
         height: calc(100vh - 48px - 22px);
         transition: ease-in 0.1s;
@@ -16,39 +18,13 @@
     }
 
     // extend member menu in server
-    &.hiddenMembers_cbd271 .members_cbd271:hover {
+    &.hiddenMembers_c8ffbb .members_c8ffbb:hover {
         transform: translateX(-80px);
     }
 }
 
-// animations for members menu
-@keyframes drop-down {
-    0% {
-        transform: translateY(-1px);
-    }
-    100% {
-        transform: translateY(1px);
-    }
-}
-
-@keyframes drop-right {
-    0% {
-        transform: translateX(-2px);
-    }
-    100% {
-        transform: translateX(2px);
-    }
-}
-
-// hide activity/username/bottag
-.activity_a31c43,
-.username_de3235,
-.botTag_a31c43 {
-    display: none;
-}
-
 // hide and style role text
-.membersGroup_cbd271 {
+@include class("membersGroup") {
     padding-top: 0;
     padding-left: 8px;
     margin-left: 8px;
@@ -61,33 +37,14 @@
 }
 
 // animate components
-.container_cbd271:hover,
-.membersWrap_cbd271:hover {
-    .membersGroup_cbd271 {
+.container_c8ffbb:hover {
+    @include class("membersGroup") {
         color: var(--text-normal);
-    }
-
-    .username_de3235 {
-        display: flex;
-    }
-
-    .activity_a31c43 {
-        display: flex;
-        transform-origin: top;
-        transform: rotateX(-90deg);
-        animation: drop-down 0.1s ease-in-out 0.1s forwards;
-    }
-
-    .botTag_a31c43 {
-        display: flex;
-        transform-origin: left;
-        transform: rotateX(-90deg);
-        animation: drop-right 0.1s ease-in-out 0.2s forwards;
     }
 }
 
 // move owner icon
-.ownerIcon_a31c43 {
+@include class("ownerIcon") {
     position: absolute;
     transform: translateX(-21px) translateY(7px) rotate(5deg) scale(0.9);
     background-color: var(--background-secondary);

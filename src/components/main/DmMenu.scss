@@ -1,40 +1,44 @@
 /* DmMenu */
-.content_eed6a8 {
+@import "../../Common";
+
+.content__99f8c {
     li:nth-child(3),
     li:nth-child(4) {
-        .linkButton_c91bad {
+        @include class("link") {
             display: none;
         }
     }
 
-    li:nth-child(1) {
-        .linkButton_c91bad {
-            position: fixed;
-            translate: -5px -53px;
-            background: none;
-            z-index: 9999;
-            width: 42px;
-            padding: 0;
-        }
+    .container__675e5 {
+        display: none;
+    }
+}
 
-        .name_ec8679 {
-            display: none;
-        }
+@include class("friendsButtonContainer") {
+    position: fixed;
+    translate: -5px -53px;
+    background: none;
+    z-index: 9999;
+    width: 50px;
+    padding: 0;
+
+    @include class("interactive") {
+        background: none;
+    }
+
+    @include class("content") {
+        display: none;
     }
 }
 
 // remove dms text
-.privateChannelsHeaderContainer_c47fa9 {
+@include class("privateChannelsHeaderContainer") {
     padding: 0;
     height: 0;
 }
 
-.headerText__88997 {
-    display: none;
-}
-
 // move + button
-.privateChannelRecipientsInviteButtonIcon_c47fa9 {
+@include class("privateChannelRecipientsInviteButtonIcon") {
     position: fixed;
     translate: 100px -28px;
     padding: 5px;
@@ -42,8 +46,8 @@
 }
 
 // move search bar to make space for above buttons
-.searchBar_f0963d {
-    .searchBarComponent_f0963d {
+@include class("searchBar") {
+    @include class("searchBarComponent") {
         font-size: 12px;
         text-align: center;
     }
