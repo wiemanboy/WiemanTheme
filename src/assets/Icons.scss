@@ -1,5 +1,0 @@
-// Because BetterDiscords themes cannot read outside images they need to be url encoded, this is done automatically when compiling the theme
-// To add an image add a scss variable with the following format: '$<image-name>: "${encode:<image_name>.svg}";' and can be use like this: content: '$<image-name>';
-// Icons will be read from the src/assets directory
-// Currently only svg files are supported
-$slime-icon: "${encode:Slime.svg}";
