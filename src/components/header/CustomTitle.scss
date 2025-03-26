@@ -1,7 +1,7 @@
 /* CustomTitle */
 @import "../../Common";
 
-@include class("typeWindows") {
+@include class("title_c38106") {
     // title
     &::after {
         font-weight: bold;
@@ -16,13 +16,8 @@
     &::before {
         transform: scale(0.2);
         position: absolute;
-        top: -40px;
+        top: -32px;
         left: 80px;
         content: $slime-icon;
     }
-}
-
-// remove discord logo
-@include class("wordmarkWindows") {
-    display: none;
 }
