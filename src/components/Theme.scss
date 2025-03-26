@@ -1,5 +1,6 @@
 /* Theme */
-.theme-dark {
+.theme-dark,
+.theme-light {
     $custom-color1: #c000c0;
     $custom-color2: #6500a3;
 
@@ -11,62 +12,9 @@
     // prettier-ignore
     --rgb-custom-color2: #{red($custom-color2)}, #{green($custom-color2)}, #{blue($custom-color2)};
 
-    --primary1: #090909;
-    --primary2: #0c0c0c;
-    --primary3: #131313;
-
-    --background-primary: #161616;
-    --background-secondary: #0f0f0f;
-    --background-tertiary: #000000;
-    --background-message-hover: var(--primary3);
-
-    --icon-color: #808080;
-    --icon-color-active: #a0a0a0;
-
-    --text-normal: #d0d0d0;
-    --text-muted: #707070;
-    --text-disabled: #404040;
-
     --danger: #de003e;
     --warning: #ff7722;
     --correct: #23a55a;
-
-    // dms text color
-    --channels-default: var(--text-muted);
-    --interactive-muted: var(--text-disabled);
-
-    // mention dms
-    --mention-foreground: var(--text-normal);
-    --mention-background: rgba(var(--rgb-custom-color2), 1);
-    --background-mentioned: rgba(var(--rgb-custom-color2), 0.4);
-    --background-mentioned-hover: rgba(var(--rgb-custom-color2), 0.5);
-
-    // Warning banner
-    --info-warning-foreground: var(--custom-color2);
-    --info-warning-background: rgba(var(--rgb-custom-color2), 0.4);
-
-    // icons
-    --interactive-normal: var(--icon-color);
-    --interactive-hover: var(--icon-color-active);
-    --interactive-active: var(--icon-color-active);
-
-    // profile background
-    --background-secondary-alt: var(--background-tertiary);
-
-    // select
-    --background-modifier-selected: var(--primary1);
-    --background-modifier-hover: var(--primary1);
-
-    // input
-    --channeltextarea-background: var(--primary2);
-    --input-background: var(--primary2);
-
-    // scrollbar
-    --scrollbar-auto-track: var(--background-secondary);
-    --scrollbar-auto-thumb: var(--background-tertiary);
-
-    // link
-    --text-link: var(--custom-color1);
 
     // Buttons
     --brand-560: var(--custom-color2);
@@ -74,39 +22,6 @@
     --brand-600: var(--custom-color2);
     --brand-500: var(--custom-color2);
 
-    // Slider
-    --brand-360: var(--custom-color1);
-
-    // gif select
-    --primary-dark-500: var(--primary3);
-
-    // chat
-    --background-floating: var(--primary1);
-
-    // link popup
-    --modal-background: var(--primary3);
-    --modal-footer-background: var(--primary1);
-    --button-secondary-background: var(--background-secondary);
-    --button-secondary-background-hover: var(--background-primary);
-
-    // audio player
-    --primary-dark-600: var(--background-primary);
-
-    // @-menu
-    --primary-630: var(--background-secondary);
-
     // disconnected
     --status-yellow-500: var(--warning);
-
-    // channel # background
-    --background-accent: var(--background-tertiary);
-
-    // Checkbox
-    --brand-experiment-400: var(--custom-color1);
-
-    // Discord message bubble
-    --primary-600: var(--background-tertiary);
-
-    // Profile buttons
-    --bg-mod-faint: var(--background-tertiary);
 }

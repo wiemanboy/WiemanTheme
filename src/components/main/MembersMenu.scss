@@ -10,6 +10,9 @@
         width: 70px;
         height: calc(100vh - 48px - 22px);
         transition: ease-in 0.1s;
+        border-left: 1px;
+        border-style: solid;
+        border-color: oklab(0.678888 0.00325716 -0.011175 / 0.239216);
 
         &:hover {
             transform: translateX(-165px);
@@ -24,29 +27,28 @@
 }
 
 // hide and style role text
-@include class("membersGroup") {
-    padding-top: 0;
+.membersGroup_c8ffbb {
+    padding-top: 3px !important;
     padding-left: 8px;
     margin-left: 8px;
     margin-top: 16px;
-    height: 16px;
-    color: var(--background-secondary);
-    border-top: var(--text-muted);
     border-top-width: 1px;
     border-top-style: solid;
+    min-height: 25.6667px;
+    font-size: 0;
 }
 
 // animate components
 .container_c8ffbb:hover {
-    @include class("membersGroup") {
-        color: var(--text-normal);
+    .membersGroup_c8ffbb {
+        font-size: 14px;
     }
 }
 
 // move owner icon
 @include class("ownerIcon") {
     position: absolute;
-    transform: translateX(-21px) translateY(7px) rotate(5deg) scale(0.9);
+    transform: translateX(-25px) translateY(7px) rotate(5deg) scale(0.9);
     background-color: var(--background-secondary);
     border-radius: 100%;
     padding: 2px;
