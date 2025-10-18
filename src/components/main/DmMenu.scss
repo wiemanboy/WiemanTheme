@@ -3,7 +3,8 @@
 
 .content_d125d2 {
     li:nth-child(3),
-    li:nth-child(4) {
+    li:nth-child(4),
+    li:nth-child(6) {
         @include class("link") {
             display: none;
         }
