@@ -33,12 +33,10 @@ jobs:
         run: |
           git config --global user.name ${{ github.triggering_actor }}.
           git config --global user.email ${{ github.triggering_actor }}@gmail.com
-          git switch --orphan $OUTPUT_BRANCH
-          git rm -rf .
+          git switch --orphan $OUTPUT_BRANCH -f
                     
           git add wiemantheme.theme.css
           git add wiemantheme.theme.css.map
-          git add README.md
 
           git commit -m "Compile ${{ github.event.repository.name }} SCSS v${{ env.VERSION }} build #${{ github.run_number }}"
           git push -f origin $OUTPUT_BRANCH
