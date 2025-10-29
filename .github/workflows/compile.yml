@@ -45,7 +45,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           token: "${{ secrets.TOKEN }}"
-          tag_name: ${{ env.VERSION }}
+          tag_name: v${{ env.VERSION }}
           name: "${{ github.event.repository.name }} v${{ env.VERSION }}"
           files: ${{ env.OUTPUT }}
           draft: false
