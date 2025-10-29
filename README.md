@@ -1,4 +1,4 @@
-![logo](.github/assets/logo.png)
+# ![logo](.github/assets/logo.png)
 
 WiemanTheme is a custom theme designed for BetterDiscord.
 
@@ -6,10 +6,10 @@ Initially made for personal use, I decided to make it available to the public fo
 
 ## Notable Features
 
--   A custom color scheme that is easy on the eyes, featuring a nice purple color.
--   Some readjustment of UI elements to eliminate clutter and make the UI more compact.  
-    ![DmIcons](.github/assets/DmIcons.png)
--   A collapsible server list to make better use of space.  
+- A custom color scheme that is easy on the eyes, featuring a nice purple color.
+- Some readjustment of UI elements to eliminate clutter and make the UI more compact.  
+    ![DMIcons](.github/assets/DMIcons.png)
+- A collapsible server list to make better use of space.  
     ![ExtendedMenu.gif](.github/assets/ExtendedMenu.gif)
 
 ## Installation

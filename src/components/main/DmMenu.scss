@@ -1,16 +1,8 @@
 /* DmMenu */
 @import "../../Common";
 
-.content_d125d2 {
-    li:nth-child(3),
-    li:nth-child(4),
-    li:nth-child(6) {
-        @include class("link") {
-            display: none;
-        }
-    }
-
-    .container__675e5 {
+@include class("container");[aria-label="Direct Messages"] {
+    a[data-list-item-id*="private-channels-uid_30___"]:is([data-list-item-id*="nitro"], [data-list-item-id*="quest"], [data-list-item-id*="shop"]) {
         display: none;
     }
 }
@@ -48,7 +40,7 @@
 // move + button
 @include class("privateChannelRecipientsInviteButtonIcon") {
     position: fixed;
-    translate: 125px -18px;
+    translate: 125px -19px;
     padding: 5px;
     z-index: 99999;
 }
