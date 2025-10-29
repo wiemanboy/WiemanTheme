@@ -42,10 +42,11 @@ jobs:
           git push -f origin $OUTPUT_BRANCH
 
       - name: Create release
-        uses: marvinpinto/action-automatic-releases@latest
+        uses: softprops/action-gh-release@v2
         with:
-          repo_token: "${{ secrets.TOKEN }}"
-          automatic_release_tag: ${{ env.VERSION }}
-          prerelease: false
-          title: "${{ github.event.repository.name }} v${{ env.VERSION }}"
+          token: "${{ secrets.TOKEN }}"
+          tag_name: ${{ env.VERSION }}
+          name: "${{ github.event.repository.name }} v${{ env.VERSION }}"
           files: ${{ env.OUTPUT }}
+          draft: false
+          make_latest: true
