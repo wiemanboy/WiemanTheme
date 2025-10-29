@@ -35,7 +35,8 @@ jobs:
           git config --global user.email ${{ github.triggering_actor }}@gmail.com
           git checkout -b $OUTPUT_BRANCH
                     
-          git add wiemantheme.theme.css
+          git add wiemantheme.theme.css -f
+          git add wiemantheme.theme.css.map -f
           git add README.md
 
           git commit -m "Compile ${{ github.event.repository.name }} SCSS v${{ env.VERSION }} build #${{ github.run_number }}"
