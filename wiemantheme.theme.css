@@ -1,0 +1,171 @@
+/**
+ * @name WiemanTheme
+ * @author wiemanboy
+ * @version 2.2.3
+ * @description A custom dark theme designed for use with BetterDiscord
+ * @source https://github.com/wiemanboy/WiemanTheme
+ */
+/* Theme */
+.theme-dark,
+.theme-light {
+  --custom-color1: #c000c0;
+  --custom-color2: #6500a3;
+  --rgb-custom-color1: 192, 0, 192;
+  --rgb-custom-color2: 101, 0, 163;
+  --danger: #de003e;
+  --warning: #ff7722;
+  --correct: #23a55a;
+  --brand-560: var(--custom-color2);
+  --brand: var(--custom-color2);
+  --brand-600: var(--custom-color2);
+  --brand-500: var(--custom-color2);
+  --status-yellow-500: var(--warning);
+}
+
+/* Header content */
+/* CustomTitle */
+[class^=title_c38106]::after {
+  font-weight: bold;
+  font-family: inherit;
+  color: var(--custom-color1);
+  position: absolute;
+  left: 10px;
+  content: "WiemanTheme";
+}
+[class^=title_c38106]::before {
+  transform: scale(0.2);
+  position: absolute;
+  top: -32px;
+  left: 80px;
+  content: url("data:image/svg+xml,%3Csvg%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%200%20100%20100%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cg%20id%3D%22slime%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22tail%22%20d%3D%22M97.5%2041C97.5%2049.7694%2095.5603%2057.6838%2092.4491%2063.388C89.3277%2069.1111%2085.0977%2072.5%2080.5469%2072.5C75.9961%2072.5%2071.7661%2069.1111%2068.6446%2063.388C65.5335%2057.6838%2063.5938%2049.7694%2063.5938%2041C63.5938%2032.2306%2065.5335%2024.3162%2068.6446%2018.612C71.7661%2012.8889%2075.9961%209.5%2080.5469%209.5C85.0977%209.5%2089.3277%2012.8889%2092.4491%2018.612C95.5603%2024.3162%2097.5%2032.2306%2097.5%2041Z%22%20fill%3D%22url(%23paint0_linear_10_55)%22%20stroke%3D%22black%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22right-ear%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M29.5614%2021.5443C27.5749%2016.0354%2024.3484%2011.5584%2020.7125%208.7817C17.082%206.00906%2012.9805%204.89269%209.30844%206.26933C5.63641%207.64597%203.22102%2011.2055%202.21669%2015.7158C1.2109%2020.2326%201.59714%2025.7744%203.58366%2031.2833C5.57017%2036.7922%208.7967%2041.2692%2012.4325%2044.0459C16.0631%2046.8185%2020.1646%2047.9349%2023.8366%2046.5583C27.5087%2045.1816%2029.9241%2041.6221%2030.9284%2037.1118C31.9342%2032.595%2031.548%2027.0532%2029.5614%2021.5443Z%22%20fill%3D%22%23AA4400%22%20stroke%3D%22black%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cellipse%20rx%3D%2216.6547%22%20ry%3D%229.63717%22%20transform%3D%22matrix(-0.339219%20-0.940707%200.93636%20-0.35104%2016.6734%2026.0502)%22%20fill%3D%22%23DDAA00%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22left-ear%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M84.5615%2031.2833C82.575%2036.7922%2079.3485%2041.2692%2075.7127%2044.0459C72.0821%2046.8186%2067.9806%2047.935%2064.3086%2046.5583C60.6365%2045.1817%2058.2211%2041.6222%2057.2168%2037.1119C56.211%2032.5951%2056.5972%2027.0533%2058.5837%2021.5444C60.5702%2016.0355%2063.7967%2011.5585%2067.4326%208.78177C71.0631%206.00911%2075.1646%204.89273%2078.8367%206.26936C82.5087%207.64599%2084.9241%2011.2055%2085.9284%2015.7158C86.9343%2020.2326%2086.548%2025.7744%2084.5615%2031.2833Z%22%20fill%3D%22%23AA4400%22%20stroke%3D%22black%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cellipse%20rx%3D%2216.6547%22%20ry%3D%229.63717%22%20transform%3D%22matrix(-0.339231%200.940703%20-0.944901%20-0.327356%2071.6734%2026.0502)%22%20fill%3D%22%23DDAA00%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22body%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M85%2077C85%2079.0668%2083.9512%2081.1049%2081.9129%2083.0265C79.8758%2084.9469%2076.8986%2086.7015%2073.1756%2088.1861C65.7335%2091.1536%2055.4185%2093%2044%2093C32.5815%2093%2022.2665%2091.1536%2014.8244%2088.1861C11.1014%2086.7015%208.12415%2084.9469%206.08706%2083.0265C4.04877%2081.1049%203%2079.0668%203%2077C3%2074.9332%204.04877%2072.8951%206.08706%2070.9735C8.12415%2069.0531%2011.1014%2067.2985%2014.8244%2065.8139C22.2665%2062.8464%2032.5815%2061%2044%2061C55.4185%2061%2065.7335%2062.8464%2073.1756%2065.8139C76.8986%2067.2985%2079.8758%2069.0531%2081.9129%2070.9735C83.9512%2072.8951%2085%2074.9332%2085%2077Z%22%20fill%3D%22%23DDAA00%22%20stroke%3D%22black%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M82.7856%2052C82.7856%2074.0914%2064.925%2092%2042.8928%2092C20.8606%2092%203%2074.0914%203%2052C3%2029.9086%2020.8606%2012%2042.8928%2012C64.925%2012%2082.7856%2029.9086%2082.7856%2052Z%22%20fill%3D%22%23DDAA00%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M84.5%2052.2754C83.9859%2057.7917%2083.307%2061.9065%2082.4743%2064.8912C81.6365%2067.8943%2080.661%2069.6847%2079.6056%2070.6265C78.5937%2071.5295%2077.461%2071.6928%2076.122%2071.299C74.7458%2070.8944%2073.1848%2069.9064%2071.4244%2068.528C69.9313%2067.3589%2068.3328%2065.9404%2066.6178%2064.4185C66.3182%2064.1526%2066.015%2063.8836%2065.7082%2063.6122C63.652%2061.7931%2061.4429%2059.8761%2059.0944%2058.1309C54.4053%2054.6463%2049.0985%2051.7985%2043.2423%2051.7985C37.3907%2051.7985%2032.1181%2054.5475%2027.4753%2057.9149C25.1505%2059.6011%2022.9695%2061.4531%2020.9432%2063.2105C20.6128%2063.497%2020.2868%2063.7807%2019.9652%2064.0607C18.3072%2065.5039%2016.7633%2066.8478%2015.321%2067.9588C13.5928%2069.2902%2012.0636%2070.2439%2010.7167%2070.6344C9.40572%2071.0146%208.29922%2070.8562%207.31128%2069.9867C6.28092%2069.0798%205.32637%2067.3542%204.50298%2064.4551C3.68472%2061.5741%203.01397%2057.6015%202.50001%2052.2745C2.51327%2030.308%2020.7462%2012%2043.2423%2012C65.7467%2012%2084.4868%2030.3164%2084.5%2052.2754Z%22%20fill%3D%22%23AA4400%22%20stroke%3D%22black%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22crest%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M30.5469%2034.3456L43.2781%2029.5345L56.0093%2034.3456V43.6544L43.2781%2048.4655L30.5469%2043.6544V34.3456Z%22%20fill%3D%22%23882200%22%20stroke%3D%22black%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M44.2514%2018.3456L56.9826%2013.5345L69.7138%2018.3456V27.6544L56.9826%2032.4655L44.2514%2027.6544V18.3456Z%22%20fill%3D%22%23882200%22%20stroke%3D%22black%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M16.5469%2018.3456L29.2781%2013.5345L42.0093%2018.3456V27.6544L29.2781%2032.4655L16.5469%2027.6544V18.3456Z%22%20fill%3D%22%23882200%22%20stroke%3D%22black%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22left-eye-brow%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22left-brow%22%20d%3D%22M77.8946%2039.1213L62.6165%2047.1213%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22left-eye%22%20d%3D%22M63%2048C63%2050.7614%2065.8299%2052%2069.205%2052C72.5802%2052%2075.3163%2049.7614%2075.3163%2047C75.3163%2044.2386%2072.5%2043%2072.5%2043C63%2048%2072.5%2043%2063%2048Z%22%20fill%3D%22black%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22right-eye-brow%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22right-brow%22%20d%3D%22M8.61652%2039.1213L23.8946%2047.1213%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22right-eye%22%20d%3D%22M23.5111%2048C23.5111%2050.7614%2020.6812%2052%2017.3061%2052C13.9309%2052%2011.1948%2049.7614%2011.1948%2047C11.1948%2044.2386%2014.0111%2043%2014.0111%2043C23.5111%2048%2014.0111%2043%2023.5111%2048Z%22%20fill%3D%22black%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22mouth%22%20d%3D%22M33.5562%2057L33.73%2057.3739C37.772%2066.0666%2050.2095%2065.8364%2053.927%2057%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22paint0_linear_10_55%22%20x1%3D%2280.5469%22%20y1%3D%229%22%20x2%3D%2280.5469%22%20y2%3D%2273%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.05%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.05%22%20stop-color%3D%22%23882200%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.15%22%20stop-color%3D%22%23882200%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.15%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.2%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.2%22%20stop-color%3D%22%23DDAA00%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.3%22%20stop-color%3D%22%23DDAA00%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.3%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.35%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.35%22%20stop-color%3D%22%23882200%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.45%22%20stop-color%3D%22%23882200%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.45%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.5%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.5%22%20stop-color%3D%22%23DDAA00%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.6%22%20stop-color%3D%22%23DDAA00%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.6%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.65%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.65%22%20stop-color%3D%22%23882200%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.75%22%20stop-color%3D%22%23882200%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.75%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.8%22%20stop-color%3D%22%23AA4400%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.8%22%20stop-color%3D%22%23DDAA00%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23DDAA00%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20close-eye%20%7B%0A%20%20%20%20%20%20%20%205%25%20%7Btransform%3A%20scaleY(0.1)%7D%0A%20%20%20%20%20%20%20%2010%25%20%7Btransform%3A%20scaleY(1)%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20close-right-brow%20%7B%0A%20%20%20%20%20%20%20%205%25%20%7Btransform%3A%20rotate(-27deg)%20translateY(2px)%7D%0A%20%20%20%20%20%20%20%2010%25%20%7Btransform%3A%20rotate(0deg)%20translate(0)%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20close-left-brow%20%7B%0A%20%20%20%20%20%20%20%205%25%20%7Btransform%3A%20rotate(27deg)%20translateY(2px)%7D%0A%20%20%20%20%20%20%20%2010%25%20%7Btransform%3A%20rotate(0deg)%20translate(0)%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%23left-eye%2C%20%23right-eye%20%7B%0A%20%20%20%20%20%20%20%20transform-origin%3A%20center%3B%0A%20%20%20%20%20%20%20%20animation%3A%20close-eye%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%23left-brow%20%7B%0A%20%20%20%20%20%20%20%20transform-origin%3A%2062px%2047px%3B%0A%20%20%20%20%20%20%20%20animation%3A%20close-left-brow%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%23right-brow%20%7B%0A%20%20%20%20%20%20%20%20transform-origin%3A%2024px%2047px%3B%0A%20%20%20%20%20%20%20%20animation%3A%20close-right-brow%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%23right-brow%2C%20%23left-brow%2C%20%23left-eye%2C%20%23right-eye%20%7B%0A%20%20%20%20%20%20%20%20animation-duration%3A%2010s%3B%0A%20%20%20%20%20%20%20%20animation-iteration-count%3A%20infinite%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20wag%20%7B%0A%20%20%20%20%20%20%20%200%25%20%7Btransform%3A%20rotate(-5deg)%7D%0A%20%20%20%20%20%20%20%2050%25%20%7Btransform%3A%20rotate(5deg)%7D%0A%20%20%20%20%20%20%20%20100%25%20%7Btransform%3A%20rotate(-5deg)%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%23tail%20%7B%0A%20%20%20%20%20%20%20%20transform-origin%3A%2075px%2060px%3B%0A%20%20%20%20%20%20%20%20animation%3A%20wag%3B%0A%20%20%20%20%20%20%20%20animation-duration%3A%205s%3B%0A%20%20%20%20%20%20%20%20animation-iteration-count%3A%20infinite%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20ear-twitch%20%7B%0A%20%20%20%20%20%20%20%200.8%25%20%7Btransform%3A%20rotate(0deg)%7D%0A%20%20%20%20%20%20%20%200.9%25%20%7Btransform%3A%20rotate(20deg)%7D%0A%20%20%20%20%20%20%20%201%25%20%7Btransform%3A%20rotate(0deg)%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%23left-ear%20%7B%0A%20%20%20%20%20%20%20%20transform-origin%3A%20center%3B%0A%20%20%20%20%20%20%20%20animation%3A%20ear-twitch%3B%0A%20%20%20%20%20%20%20%20animation-duration%3A%2090s%3B%0A%20%20%20%20%20%20%20%20animation-iteration-count%3A%20infinite%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20bounce%20%7B%0A%20%20%20%20%20%20%20%200%25%20%7Btransform%3A%20scaleY(1)%7D%0A%20%20%20%20%20%20%20%2050%25%20%7Btransform%3A%20scaleY(0.99)%7D%0A%20%20%20%20%20%20%20%20100%25%20%7Btransform%3A%20scaleY(1)%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%23slime%20%7B%0A%20%20%20%20%20%20%20%20transform-origin%3A%20center%3B%0A%20%20%20%20%20%20%20%20animation%3A%20bounce%3B%0A%20%20%20%20%20%20%20%20animation-duration%3A%203s%3B%0A%20%20%20%20%20%20%20%20animation-iteration-count%3A%20infinite%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%3C%2Fsvg%3E");
+}
+
+/* Main content */
+/* DmMenu */
+[aria-label="Direct Messages"] a[data-list-item-id*=private-channels-uid_30___]:is([data-list-item-id*=nitro], [data-list-item-id*=quest], [data-list-item-id*=shop]) {
+  display: none;
+}
+
+[class^=sectionDivider] {
+  display: none;
+}
+
+[class^=friendsButtonContainer] {
+  position: fixed;
+  translate: 0 -53px;
+  background: none;
+  z-index: 9999;
+  width: 50px;
+  padding: 0;
+}
+[class^=friendsButtonContainer] [class^=interactive] {
+  background: none;
+}
+[class^=friendsButtonContainer] [class^=content] {
+  display: none;
+}
+
+[class^=privateChannelsHeaderContainer] {
+  padding: 0;
+  height: 0;
+}
+[class^=privateChannelsHeaderContainer] [class^=headerText] {
+  display: none;
+}
+
+[class^=privateChannelRecipientsInviteButtonIcon] {
+  position: fixed;
+  translate: 125px -19px;
+  padding: 5px;
+  z-index: 99999;
+}
+
+[class^=searchBar] [class^=searchBarComponent] {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* MembersMenu */
+[class^=membersWrap] {
+  width: 70px;
+  min-width: 70px;
+}
+[class^=membersWrap] .members_c8ffbb {
+  width: 70px;
+  height: calc(100vh - 48px - 22px);
+  transition: ease-in 0.1s;
+  border-left: 1px;
+  border-style: solid;
+  border-color: oklab(0.678888 0.00325716 -0.011175/0.239216);
+}
+[class^=membersWrap] .members_c8ffbb:hover {
+  transform: translateX(-165px);
+  width: 240px;
+}
+[class^=membersWrap].hiddenMembers_c8ffbb .members_c8ffbb:hover {
+  transform: translateX(-80px);
+}
+
+.membersGroup_c8ffbb {
+  padding-top: 3px !important;
+  padding-left: 8px;
+  margin-left: 8px;
+  margin-top: 16px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  min-height: 25.6667px;
+  font-size: 0;
+}
+
+.container_c8ffbb:hover .membersGroup_c8ffbb {
+  font-size: 14px;
+}
+
+[class^=ownerIcon] {
+  position: absolute;
+  transform: translateX(-25px) translateY(7px) rotate(5deg) scale(0.9);
+  background-color: var(--background-secondary);
+  border-radius: 100%;
+  padding: 2px;
+}
+
+/* Button */
+button {
+  filter: brightness(1);
+}
+button:hover {
+  filter: brightness(1.2);
+}
+button:active {
+  filter: brightness(1.5);
+}
+
+/* SpotifyInvite */
+:root .invite__4d3fa {
+  background: var(--primary2);
+  border-color: var(--primary2);
+}
+
+/* Settings content */
+/* BdButton */
+.bd-button.bd-button-filled:hover, .bd-button.bd-button-filled:active, .bd-button.bd-button-filled.bd-button-disabled, .bd-button.bd-button-filled, .bd-notice,
+.bd-addon-views .bd-view-button.selected {
+  background-color: var(--custom-color2);
+}
+
+.bd-button.bd-button-icon svg,
+.bd-button .bd-icon {
+  fill: var(--icon-color);
+}
+.bd-button.bd-button-filled.bd-button-color-red {
+  background: var(--danger);
+}
+.bd-button.bd-button-filled.bd-button-color-red:hover, .bd-button.bd-button-filled.bd-button-color-red:active {
+  background-color: var(--danger);
+}
+/* MicTestBar */
+#pill-frame-pattern {
+  color: var(--background-primary);
+}
+
+/*# sourceMappingURL=wiemantheme.theme.css.map */
