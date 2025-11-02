@@ -1,20 +1,22 @@
 /* Theme */
-.theme-dark,
-.theme-light {
-    $custom-color1: #c000c0;
-    $custom-color2: #6500a3;
+:root {
+    $custom-color-light: #da90da;
+    $custom-color-medium: #c000c0;
+    $custom-color-dark: #6500a3;
 
-    --custom-color1: #{$custom-color1};
-    --custom-color2: #{$custom-color2};
+    --custom-color0: #{$custom-color-light};
+    --custom-color1: #{$custom-color-medium};
+    --custom-color2: #{$custom-color-dark};
 
     // prettier-ignore
-    --rgb-custom-color1: #{red($custom-color1)}, #{green($custom-color1)}, #{blue($custom-color1)};
+    --rgb-custom-color1: #{red($custom-color-medium)}, #{green($custom-color-medium)}, #{blue($custom-color-medium)};
     // prettier-ignore
-    --rgb-custom-color2: #{red($custom-color2)}, #{green($custom-color2)}, #{blue($custom-color2)};
+    --rgb-custom-color2: #{red($custom-color-dark)}, #{green($custom-color-dark)}, #{blue($custom-color-dark)};
 
     --danger: #de003e;
     --warning: #ff7722;
     --correct: #23a55a;
+
 
     // Buttons
     --brand-560: var(--custom-color2);
@@ -24,4 +26,11 @@
 
     // disconnected
     --status-yellow-500: var(--warning);
+
+    // mentions
+    --yellow-300: var(--custom-color2);
+    --background-mentioned: rgba(var(--rgb-custom-color2), 0.1);
+    --background-mentioned-hover: rgba(var(--rgb-custom-color2), 0.2);
+    --mention-foreground: var(--custom-color0);
+    --mention-background: rgba(var(--rgb-custom-color1), 0.2);
 }
