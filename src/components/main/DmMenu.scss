@@ -1,8 +1,10 @@
 /* DmMenu */
 @import "../../Common";
 
-@include class("container");[aria-label="Direct Messages"] {
-    a[data-list-item-id*="private-channels-uid_30___"]:is([data-list-item-id*="nitro"], [data-list-item-id*="quest"], [data-list-item-id*="shop"]) {
+@include class("container");
+
+[aria-label="Direct Messages"] {
+    a[data-list-item-id^="private-channels-uid_"]:is([data-list-item-id*="nitro"], [data-list-item-id*="quest"], [data-list-item-id*="shop"]) {
         display: none;
     }
 }
@@ -32,6 +34,7 @@
 @include class("privateChannelsHeaderContainer") {
     padding: 0;
     height: 0;
+
     @include class("headerText") {
         display: none;
     }
