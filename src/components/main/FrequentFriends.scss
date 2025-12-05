@@ -1,0 +1,13 @@
+/* FrequentFriends */
+@import "../../Common";
+
+@include class("frequentFriendsRow") {
+    margin: 0 0 15px 12px;
+    padding: 5px;
+    background-color: var(--control-background-secondary-default);
+    border-radius: 8px;
+}
+
+@include class("frequentFriendsHeader") {
+    margin: 0 0 2px 0;
+}
