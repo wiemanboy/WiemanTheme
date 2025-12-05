@@ -43,7 +43,8 @@
 // move + button
 @include class("privateChannelRecipientsInviteButtonIcon") {
     position: fixed;
-    translate: 125px -19px;
+    top: 0;
+    translate: 125px 5.5px;
     padding: 5px;
     z-index: 99999;
 }
