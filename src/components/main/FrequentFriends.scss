@@ -7,3 +7,7 @@
     background-color: var(--control-background-secondary-default);
     border-radius: 8px;
 }
+
+@include class("frequentFriendsHeader") {
+    margin: 0 0 2px 0;
+}
