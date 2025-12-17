@@ -1,47 +1,42 @@
 /* MembersMenu */
 @import "../../Common";
 
-@include class("membersWrap") {
-    width: 70px;
-    min-width: 70px;
+[class*=-container]:has(> [class*=-membersWrap]) {
+    width: 65px;
+    min-width: 65px;
+    transition: ease-in 0.1s;
 
-    // extend member menu in DM
-    .members_c8ffbb {
-        width: 70px;
-        height: calc(100vh - 48px - 22px);
-        transition: ease-in 0.1s;
-        border-left: 1px;
-        border-style: solid;
-        border-color: oklab(0.678888 0.00325716 -0.011175 / 0.239216);
-
-        &:hover {
-            transform: translateX(-165px);
-            width: 240px;
+    @include class("-member") {
+        @include class("-childContainer") {
+            @include class("-content") {
+                visibility: hidden;
+            }
         }
     }
 
-    // extend member menu in server
-    &.hiddenMembers_c8ffbb .members_c8ffbb:hover {
-        transform: translateX(-80px);
+    @include class("-membersGroup") {
+        border-bottom-width: 1px;
+        border-color: var(--border-subtle);
+        border-style: solid;
+        color: var(--background-gradient-chat, var(--custom-channel-members-bg));
+        margin-bottom: 5px;
     }
-}
 
-// hide and style role text
-.membersGroup_c8ffbb {
-    padding-top: 3px !important;
-    padding-left: 8px;
-    margin-left: 8px;
-    margin-top: 16px;
-    border-top-width: 1px;
-    border-top-style: solid;
-    min-height: 25.6667px;
-    font-size: 0;
-}
+    &:hover {
+        width: 264px;
 
-// animate components
-.container_c8ffbb:hover {
-    .membersGroup_c8ffbb {
-        font-size: 14px;
+        @include class("-member") {
+            @include class("-childContainer") {
+                @include class("-content") {
+                    visibility: visible;
+                }
+            }
+        }
+
+        @include class("-membersGroup") {
+            color: var(--channels-default);
+            display: block;
+        }
     }
 }
 
@@ -52,4 +47,5 @@
     background-color: var(--background-light);
     border-radius: 100%;
     padding: 2px;
+    visibility: visible;
 }
