@@ -1,5 +1,5 @@
-@mixin class($prefix) {
-    [class^="#{$prefix}"] {
-        @content;
-    }
+@mixin class($prefix, $state: null) {
+  [class*="#{$prefix}"]#{$state} {
+    @content;
+  }
 }
